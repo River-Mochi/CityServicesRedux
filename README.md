@@ -1,5 +1,4 @@
-
-# City Services Redux Mod
+﻿# City Services Redux Mod
 The mod allows for virtually any changes to City Services buildings. At the moment, it mainly **increases number of workers in City Services buildings** and does other small adjustments (see below for details). It does so by changing Prefab parameters during the game start-up, so no changes to game systems are required. In the long term this can serve as a foundation for **tuning and balancing any parameter**. I encourage to contribute to the mod by raising issues and/or PRs on GitHub with proposed changes and rationale behind such changes.
 
 Number of configured buildings and extensions: **186**.
@@ -13,8 +12,10 @@ Number of configured buildings and extensions: **186**.
 
 ### Building configuration
 - The configuration is kept in the `Config.xml` file that comes together with the mod.
-- The file is loaded when the game is started, so for new params to take effect you need to restart the game.
-- Note for the future. Please note that new mod versions will overwrite the Config.xml file so if you did any customizations and want to keep them - make a backup before update and then reapply to the updated version.
+- The file is loaded when the game starts or when you click “APPLY new configuration now” in options.
+- For existing buildings, you need to rebuild them to see new values.
+- New mod versions should not overwrite your custom Config.xml in ModsData/RealCity.
+- If you want a clean starting point again, use the "Restore new Config.xml" button in options.
 
 ### Customizing the parameters
 - As for now the mod allows to change any parameter that is stored as either an integer number (so Enums too) or a float number. This covers like 90% of params :)
@@ -26,6 +27,10 @@ Number of configured buildings and extensions: **186**.
 - Conversly, when the mod is deactivated, the buildings will retain their modded params. New buildings will have again vanilla params.
 
 
+### 6 languages
+* English, Français French, Deutsch German, Español Spanish
+* 简体中文 Simplified Chinese, Português Brazilian
+
 ## Technical
 
 ### Requirements and Compatibility
@@ -34,7 +39,7 @@ Number of configured buildings and extensions: **186**.
 - The mod uses Cities: Skylines 2 Mod Template by Captain-Of-Coit.
 
 ### Known Issues
-- Nothing atm.
+- Nothing at the moment.
 
 ### [Changelog](./CHANGELOG.md)
 

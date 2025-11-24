@@ -28,12 +28,16 @@ Tweaks and modifies City Service buildings to your liking. By default, you could
 
 * Curated Presets: all buildings have more workplaces and some have altered requirements for what education levels are required at that building.
 All presets have been set manually taking into consideration various aspects. Some have only slightly more workers (2), but some have many more.
-* Example: Central Intelligense vanilla is 100, the preset sets this to 300 workers for such a large building.
+* Example: Central Intelligense vanilla is 200, the preset sets this to 300 workers for such a large building.
 * Look into Config.xml or RealCity.log to find out about specific buildings, but you can increase or decrease what is in the preset file that comes with the mod.
 * Crematorium has 2x higher processing rate to handle increased deaths from Population Rebalance (this won't matter if you use Magic Hearse).
 * If you don't like the preset numbers, then use the player-modifiable local Config.xml (from ModsData/RealCity/Config.xml).
 * New configuration can be applied/updated even during the game (use options menu).
 * To add new components and parameters please refer to info and examples in Config.xml file which can be edited with Notepad++ or similar.
+
+### 6 Languages
+* English, Français French, Deutsch German, Español Spanish
+* 简体中文 Simplified Chinese, Português Brazilian
 
 ### Technical
 
@@ -47,7 +51,7 @@ It does not add any per-frame systems, so it has essentially no impact on perfor
 ### CREDITS
 - River-Mochi current author/maintainer
 - Thanks to Infixo for the original City Services mod
-- Fans of the mod who kept hope alive for a redux
+- Fans of the mod who kept hope alive
 
 
 	</LongDescription>
@@ -68,8 +72,6 @@ It does not add any per-frame systems, so it has essentially no impact on perfor
 	<!--Change log for new version. Single line or multi line. Supports minimal markdown subset-->
 	<!--ChangeLog Value="" /-->
 	<ChangeLog>
-- complete refactor of the original
-- updated to work for 1.4.* game patch
 </ChangeLog>
 	<!--External link. supported types are discord, github, youtube, twitch, x, paypal, patreon-->
 	<ExternalLink Type="discord" Url="https://discord.gg/HTav7ARPs2" />

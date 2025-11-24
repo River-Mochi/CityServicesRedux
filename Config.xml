@@ -269,7 +269,7 @@
   <!-- Central Investigation Bureau -->
   <Prefab type="BuildingPrefab" name="CentralInvestigationBureau01">
     <Component name="Workplace">
-      <Field name="m_Workplaces" valueInt="300" valueFloat="0" /> <!-- 100 -->
+      <Field name="m_Workplaces" valueInt="300" valueFloat="0" /> <!-- 200 -->
       <Field name="m_Complexity" valueInt="3" valueFloat="0" /> <!-- Hitech => ok -->
     </Component>
   </Prefab>

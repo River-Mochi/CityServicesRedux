@@ -88,7 +88,7 @@ namespace RealCity
                     "• **Never** set workplaces to 0; use small positive values if you need low staffing.\n" +
                     "• After making changes, save the file, then use the **APPLY** button to update file changes to the mod.\n\n" +
                     "Use <Restore new> file <ONLY> if you mess up or just want a completely fresh Config.xml - replaces existing file.\n" +
-                    "You can switch back to **[Use PRESETS]** at any time. "
+                    "You can switch back to **PRESETS** at any time. "
                 },
 
                 // -----------------------------
