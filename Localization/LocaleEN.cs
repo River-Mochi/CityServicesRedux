@@ -161,9 +161,10 @@ namespace RealCity
                     "Option 2 - Power users\n" +
                     "Select  <[Use CUSTOM Config.xml]> to edit your own values.\n\n" +
                     "1. Click <[OPEN Config folder]>\n" +
-                    "2. Open, edit, and save <Config.xml> with your preferred text editor.\n" +
-                    "3. Then Click <[APPLY NEW Configuration Now]>.\n" +
-                    "4. <Load a city> (or reload) to see changes to **new** buildings."
+                    "2. Open, edit, and save <Config.xml> with a text editor (e.g., Notepad++).\n" +
+                    "3. Click <[APPLY NEW Configuration Now]> - updates changes.\n" +
+                    "4. <Load city> (or reload) to see changes to <NEW> buildings.\n" +
+                    "5. Steps 1-4 can be repeated with no restart if you always click <APPLY> changes."
                 },
                 { m_Setting.GetOptionDescLocaleID(nameof(Setting.ConfigUsageSteps)), " " },
 
@@ -177,9 +178,10 @@ namespace RealCity
                 {
                     m_Setting.GetOptionDescLocaleID(nameof(Setting.Logging)),
                     "Writes a lot of extra information to the log file.\n" +
-                    "<NOT recommended> for normal gameplay.\n" +
+                    "<Do NOT use> for normal gameplay.\n" +
                     "Excessive logging can slow the game and create large log files.\n" +
-                    "Turn this on only temporarily when you are collecting data or debugging."
+                    "Turn this on only temporarily when collecting data or debugging.\n" +
+                    "If you are not sure what this is, best to leave it DISABLED."
                 },
 
                 // DumpPrefabStatus button
