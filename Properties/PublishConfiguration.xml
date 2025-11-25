@@ -54,7 +54,6 @@ It does not add any per-frame systems, so it has essentially no impact on perfor
 - Thanks to Infixo for the original City Services Rebalance mod
 - Fans of the mod who kept hope alive
 - BugsyG - testing
-- Dorin - testing
 
 	</LongDescription>
 	<!--Thumbnail-->
@@ -72,7 +71,7 @@ It does not add any per-frame systems, so it has essentially no impact on perfor
 	<!--Link to the forum post where the mod can be discussed-->
 	<ForumLink Value="https://forum.paradoxplaza.com/forum/threads/city-services-rebalance-redux.1878625/" />
 	<!--Version of the mod-->
-	<ModVersion Value="0.5.5" />
+	<ModVersion Value="0.5.6" />
 	<!--Recommended version of the base game to use the mod-->
 	<GameVersion Value="1.4.*" />
 	<!--Dependency for the mod, can be set multiple times-->
@@ -80,7 +79,7 @@ It does not add any per-frame systems, so it has essentially no impact on perfor
 	<!--Change log for new version. Single line or multi line. Supports minimal markdown subset-->
 	<!--ChangeLog Value="" /-->
 	<ChangeLog>
-- update Config file and publish docs
+- update prefab data for Config minimums
 </ChangeLog>
 	<!--External link. supported types are discord, github, youtube, twitch, x, paypal, patreon-->
 	<ExternalLink Type="discord" Url="https://discord.gg/HTav7ARPs2" />
