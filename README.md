@@ -29,14 +29,13 @@ Number of configured buildings and extensions: **186**.
 
 ### 6 languages
 * English, Français French, Deutsch German, Español Spanish
-* 简体中文 Simplified Chinese, Português Brazilian
+* 简体中文 Simplified Chinese, Português Brazilian, Polski Polish
 
 ## Technical
 
 ### Requirements and Compatibility
-- The mod does NOT modify savefiles.
+- The mod does NOT modify save files.
 - The mod does NOT modify game systems.
-- The mod uses Cities: Skylines 2 Mod Template by Captain-Of-Coit.
 
 ### Known Issues
 - Nothing at the moment.
@@ -44,8 +43,8 @@ Number of configured buildings and extensions: **186**.
 ### [Changelog](./CHANGELOG.md)
 
 ### Support
-- Mod can be installed from [Paradox Mods](https://mods.paradoxplaza.com/uploaded?orderBy=desc&sortBy=best&time=alltime)
+- Mod can be installed from [Paradox Mods]("https://mods.paradoxplaza.com/authors/kimosabe1/cities_skylines_2?games=cities_skylines_2&orderBy=desc&sortBy=best&time=alltime")
 - Please report bugs and issues on [GitHub](https://github.com/River-Mochi/CityServicesRedux).
-- You may also leave comments on [Paradox Forum](https://forum.paradoxplaza.com/forum/threads/city-services-rebalance-redux.1878625/)
+- There is also [Paradox Forum](https://forum.paradoxplaza.com/forum/threads/city-services-rebalance-redux.1878625/)
 - or [Discord](https://discord.gg/HTav7ARPs2)
 

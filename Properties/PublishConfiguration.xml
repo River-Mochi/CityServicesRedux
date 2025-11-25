@@ -4,7 +4,7 @@
 	<!--Name of the mod to display to players-->
 	<DisplayName Value="City Services Redux" />
 	<!--Short description of the mod-->
-	<ShortDescription Value="Increases number of workers in City Services plus other small adjustments." />
+	<ShortDescription Value="Increases number of workers and other small adjustments for City Services." />
 	<!--Long description of the mod. Single line or multi line. Supports minimal markdown subset-->
 	<!--LongDescription Value="Increases number of workers in City Services and other small adjustments." /-->
 	<LongDescription>**City Services Redux** aka RealCity
@@ -12,48 +12,45 @@
 Tweak and modify City Service buildings to your liking. By default, you could just install this mod and use it as-is with no configuration.
 
 ### Quick-Start
-- Just Click "PRESETS" and play game, done.
-- Curated preset list that increases the **number of workers** in City Services and a few other small adjustments (details below). 
+- Just select "PRESETS" and play, done.
+- Curated preset list increases the number of workers and a few other small adjustments (details below). 
 - Increased workers automatically increases the wages (scaled by the game itself).
-- New parameters are only applied to **new buildings**.
+- New settings are only applied to **new** buildings.
 
-Number of preset configured buildings and extensions: **186**.
+Number of **preset** buildings and extensions: **186**.
 
-### 6 Languages
+### 7 Languages
 * English, Français French, Deutsch German, Español Spanish
-* 简体中文 Simplified Chinese, Português Brazilian
+* 简体中文 Simplified Chinese, Português Brazilian, Polski Polish
 
 ### Curated Presets
-* All buildings have more workplaces, some have altered required education levels and other allowed tweaks.
-* Presets were designed with various considerations. Some have only slightly more workers (2), and some have many.
+* All buildings have more workplaces, some have required education levels adjusted, and other allowed tweaks.
+* Presets are designed with various considerations. Some have only slightly more workers (2), and some have many.
 * Examples: Central Intelligence vanilla is 200 workers, preset is 300 as this is a large building.
-* Crematorium has 2x higher processing rate to handle increased deaths from Population Rebalance (this won't matter if you use Magic Hearse).
-* Existing buildings need to be destroyed and plopped again to see changes for new values.
+* Crematorium has 2x higher processing rate to handle increased deaths from Population Rebalance.
+* Existing buildings need to be destroyed and plopped again to see new changes.
 * If you want more than preset numbers, then see Power users.
 
 
 ### Power Users
 - Easily tweak all player adjustable config file as you wish.
-- Open mod options, then "Open folder" button to create a config file you can customize.
-- Please refer to info / examples in Config.xml file for how to add / alter components (edit with Notepad++ or similar).
-- New changes can be applied even during the game (use options menu).
-- See Forum if interested in an Excel sheet helper that formats road cost/maintenance entries that can also be pasted into the config file.
+- Open mod Options > Custom > [Open Config folder] to create a Config.xml file you can customize.
+- Refer to info / examples in Config.xml for how to add / alter components (edit with Notepad++ or similar).
+- New changes can be "Applied" even during the game (use options menu).
 
 ### Technical
 
 * DLC entries only work if you own the DLC and can plop the items.
 * Safety: mod does **not** modify save files or any game systems.
-* Can be removed at any time - already plopped buildings retain modded params and new buildings will have ofc vanilla params.
-* Performance: this is a lightweight configuration mod. It only does a short pass when applying settings (on game load or when you press APPLY). 
+* Can be removed at any time - already plopped buildings retain modded values and new buildings will have ofc vanilla values.
+* Performance: this is a lightweight configuration mod. It only does a short pass when applying settings (on game load or when you click APPLY). 
 It does not add any per-frame systems, so it has essentially no impact on performance.
 
 
 ### CREDITS
 - River-Mochi current author and maintainer
 - Thanks to Infixo for the original City Services mod
-- Dorin made an excel file helper to create entries for road/maintenance costs
 - Fans of the mod who kept hope alive
-
 
 	</LongDescription>
 	<!--Thumbnail-->
@@ -71,7 +68,7 @@ It does not add any per-frame systems, so it has essentially no impact on perfor
 	<!--Link to the forum post where the mod can be discussed-->
 	<ForumLink Value="https://forum.paradoxplaza.com/forum/threads/city-services-rebalance-redux.1878625/" />
 	<!--Version of the mod-->
-	<ModVersion Value="0.5.2" />
+	<ModVersion Value="0.5.4" />
 	<!--Recommended version of the base game to use the mod-->
 	<GameVersion Value="1.4.*" />
 	<!--Dependency for the mod, can be set multiple times-->
@@ -79,10 +76,9 @@ It does not add any per-frame systems, so it has essentially no impact on perfor
 	<!--Change log for new version. Single line or multi line. Supports minimal markdown subset-->
 	<!--ChangeLog Value="" /-->
 	<ChangeLog>
-- fix images
+- update instructions
 </ChangeLog>
 	<!--External link. supported types are discord, github, youtube, twitch, x, paypal, patreon-->
 	<ExternalLink Type="discord" Url="https://discord.gg/HTav7ARPs2" />
 	<ExternalLink Type="github" Url="https://github.com/River-Mochi/CityServicesRedux" />
-
 </Publish>

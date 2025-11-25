@@ -21,7 +21,7 @@ namespace RealCity
         {
             var title = Mod.ModName;
 
-            // Show "City Services Redux 0.5.1" title
+            // Show "City Services Redux 0.5.3" title
             if (!string.IsNullOrEmpty(Mod.ModVersion))
             {
                 title = title + " " + Mod.ModVersion;
@@ -42,18 +42,10 @@ namespace RealCity
                 { m_Setting.GetOptionGroupLocaleID(Setting.kDebugGroup), "DEBUG" },
 
                 // Debug tab: Info group
-                {
-                    m_Setting.GetOptionLabelLocaleID(nameof(Setting.NameDisplay)), "Mod"
-                },
-                {
-                    m_Setting.GetOptionDescLocaleID(nameof(Setting.NameDisplay)), "Display name of this mod."
-                },
-                {
-                    m_Setting.GetOptionLabelLocaleID(nameof(Setting.VersionDisplay)), "Version"
-                },
-                {
-                    m_Setting.GetOptionDescLocaleID(nameof(Setting.VersionDisplay)), "Current version number."
-                },
+                { m_Setting.GetOptionLabelLocaleID(nameof(Setting.NameDisplay)), "Mod" },
+                { m_Setting.GetOptionDescLocaleID(nameof(Setting.NameDisplay)), "Display name of this mod." },
+                { m_Setting.GetOptionLabelLocaleID(nameof(Setting.VersionDisplay)), "Version" },
+                { m_Setting.GetOptionDescLocaleID(nameof(Setting.VersionDisplay)), "Current version number." },
 
                 // -----------------------------
                 // Actions tab: Options toggles
@@ -61,9 +53,7 @@ namespace RealCity
 
                 // UseModPresets
                 {
-                    m_Setting.GetOptionLabelLocaleID(nameof(Setting.UseModPresets)),
-                    "RECOMMENDED PRESETS"
-                },
+                    m_Setting.GetOptionLabelLocaleID(nameof(Setting.UseModPresets)), "RECOMMENDED PRESETS" },
                 {
                     m_Setting.GetOptionDescLocaleID(nameof(Setting.UseModPresets)),
                     "**Quick Start** - apply all recommended presets\n" +
@@ -74,9 +64,7 @@ namespace RealCity
 
                 // UseLocalConfig
                 {
-                    m_Setting.GetOptionLabelLocaleID(nameof(Setting.UseLocalConfig)),
-                    "USE CUSTOM Config.xml"
-                },
+                    m_Setting.GetOptionLabelLocaleID(nameof(Setting.UseLocalConfig)), "USE CUSTOM FILE" },
                 {
                     m_Setting.GetOptionDescLocaleID(nameof(Setting.UseLocalConfig)),
                     "**POWER USERS**\n" +
@@ -96,10 +84,7 @@ namespace RealCity
                 // -----------------------------
 
                 // OpenConfigFile button (now: folder)
-                {
-                    m_Setting.GetOptionLabelLocaleID(nameof(Setting.OpenConfigFile)),
-                    "OPEN Config folder"
-                },
+                { m_Setting.GetOptionLabelLocaleID(nameof(Setting.OpenConfigFile)), "OPEN Config folder" },
                 {
                     m_Setting.GetOptionDescLocaleID(nameof(Setting.OpenConfigFile)),
                     "This is not required, only use this if you plan on changing the default presets already set by the mod.\n" +
@@ -138,7 +123,7 @@ namespace RealCity
                     m_Setting.GetOptionDescLocaleID(nameof(Setting.ResetLocalConfig)),
                     "START OVER BUTTON\n\n" +
                     "Overwrite the **ModsData/RealCity/Config.xml** with a fresh copy of the original mod presets.\n" +
-                    "• Use this <only> if your custom file becomes corrupted or you just want to start over.\n\n" +
+                    "• Use this <only> if your custom file becomes corrupt or you just want to start over.\n\n" +
                     "• **Restore new** replaces the existing file - must close original Config.xml file first."
                 },
                 {
@@ -159,11 +144,11 @@ namespace RealCity
                     "If you pick PRESETS, done - Play game.\n\n" +
                     "<--------------------------->\n\n" +
                     "Option 2 - Power users\n" +
-                    "Select  <[Use CUSTOM Config.xml]> to edit your own values.\n\n" +
+                    "Select  <[Use CUSTOM FILE]> to edit your own Config.xml.\n\n" +
                     "1. Click <[OPEN Config folder]>\n" +
-                    "2. Open, edit, and save <Config.xml> with a text editor (e.g., Notepad++).\n" +
-                    "3. Click <[APPLY NEW Configuration Now]> - updates changes.\n" +
-                    "4. <Load city> (or reload) to see changes to <NEW> buildings.\n" +
+                    "2. Open, edit, save <Config.xml> with a text editor (e.g., Notepad++).\n" +
+                    "3. Click <[APPLY NEW Configuration Now]> - updates any changes to file.\n" +
+                    "4. <Load City> (or reload) to see changes to <NEW> buildings.\n" +
                     "5. Steps 1-4 can be repeated with no restart if you always click <APPLY> changes."
                 },
                 { m_Setting.GetOptionDescLocaleID(nameof(Setting.ConfigUsageSteps)), " " },
@@ -174,7 +159,7 @@ namespace RealCity
 
                 // Logging (strong warning about performance)
                 {
-                    m_Setting.GetOptionLabelLocaleID(nameof(Setting.Logging)), "Verbose logging (advanced)" },
+                    m_Setting.GetOptionLabelLocaleID(nameof(Setting.Logging)), "Verbose logs (Read Warnings on right side before use)" },
                 {
                     m_Setting.GetOptionDescLocaleID(nameof(Setting.Logging)),
                     "Writes a lot of extra information to the log file.\n" +

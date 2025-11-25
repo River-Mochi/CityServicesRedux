@@ -29,8 +29,8 @@ namespace RealCity
     public class Setting : ModSetting
     {
         // Tabs (sections)
-        public const string kSection = "Actions";     // Shown as "Actions" via locale
-        public const string kDebugSection = "Debug";  // Shown as "Debug" via locale
+        public const string kSection = "Actions";    
+        public const string kDebugSection = "Debug"; 
 
         // Groups
         public const string kToggleGroup = "Options";
@@ -44,7 +44,7 @@ namespace RealCity
 
         // External links
         private const string kUrlParadoxMods =
-            "https://mods.paradoxplaza.com/uploaded?orderBy=desc&sortBy=best&time=alltime";
+            "https://mods.paradoxplaza.com/authors/kimosabe1/cities_skylines_2?games=cities_skylines_2&orderBy=desc&sortBy=best&time=alltime";
 
         // Backing fields for mutually exclusive toggles
         private bool m_UseModPresets;
