@@ -128,7 +128,7 @@
   <!-- Airport -->
   <Prefab type="BuildingPrefab" name="Airport01">
     <Component name="Workplace">
-      <Field name="m_Workplaces" valueInt="120" valueFloat="0" /> <!-- 20 -->
+      <Field name="m_Workplaces" valueInt="140" valueFloat="0" /> <!-- 20 -->
       <Field name="m_Complexity" valueInt="2" valueFloat="0" /> <!-- Hitech => Complex -->
     </Component>
   </Prefab>
