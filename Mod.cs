@@ -112,10 +112,10 @@ namespace RealCity
             AddLocaleSource("fr-FR", new LocaleFR(s));
             // AddLocaleSource("it-IT",    new LocaleIT(s));
             // AddLocaleSource("ja-JP",    new LocaleJA(s));
-            // AddLocaleSource("ko-KR",    new LocaleKO(s));
-            AddLocaleSource("pt-BR", new LocalePT_BR(s));
-            AddLocaleSource("pl-PL", new LocalePL(s));
-            AddLocaleSource("zh-HANS", new LocaleZH_CN(s));
+            AddLocaleSource("ko-KR",    new LocaleKO(s));
+            AddLocaleSource("pl-PL",    new LocalePL(s));
+            AddLocaleSource("pt-BR",    new LocalePT_BR(s));
+            AddLocaleSource("zh-HANS",  new LocaleZH_CN(s));
             // AddLocaleSource("zh-HANT",  new LocaleZH_HANT(s));
             // AddLocaleSource("vi-VN", new LocaleVI(settings));
 

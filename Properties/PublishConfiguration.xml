@@ -22,6 +22,7 @@ Number of **preset** buildings and extensions: **221**.
 ### 7 Languages
 * English, Français French, Deutsch German, Español Spanish
 * 简体中文 Simplified Chinese, Português Brazilian, Polski Polish
+* 한국어 Korean
 
 ### Curated Presets
 * All buildings have more workplaces, some have required education levels adjusted, and other allowed tweaks.
@@ -50,7 +51,7 @@ It does not add any per-frame systems, so it essentially has no impact on perfor
 
 
 ### CREDITS
-- River-Mochi author and maintainer
+- River-Mochi author
 - Thanks to Infixo for the original City Services Rebalance mod
 - Fans of the mod who kept hope alive
 - BugsyG - testing
@@ -71,7 +72,7 @@ It does not add any per-frame systems, so it essentially has no impact on perfor
 	<!--Link to the forum post where the mod can be discussed-->
 	<ForumLink Value="https://forum.paradoxplaza.com/forum/threads/city-services-rebalance-redux.1878625/" />
 	<!--Version of the mod-->
-	<ModVersion Value="0.5.7" />
+	<ModVersion Value="0.5.8" />
 	<!--Recommended version of the base game to use the mod-->
 	<GameVersion Value="1.4.*" />
 	<!--Dependency for the mod, can be set multiple times-->
@@ -79,9 +80,7 @@ It does not add any per-frame systems, so it essentially has no impact on perfor
 	<!--Change log for new version. Single line or multi line. Supports minimal markdown subset-->
 	<!--ChangeLog Value="" /-->
 	<ChangeLog>
-- adds prefabs, Config increased to 221 presets now.
-- adds EE and FR medical clinics to presets.
-- adds EE_welfare, EE_CityHall, FR_Highschool, FR_College
+- adds 한국어 Korean
 </ChangeLog>
 	<!--External link. supported types are discord, github, youtube, twitch, x, paypal, patreon-->
 	<ExternalLink Type="discord" Url="https://discord.gg/HTav7ARPs2" />
