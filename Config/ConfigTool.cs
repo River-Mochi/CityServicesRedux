@@ -5,7 +5,6 @@ namespace RealCity
 {
     using System;                 // Exception, Type
     using System.Reflection;      // BindingFlags, FieldInfo, MethodInfo
-    using Game.Economy;           // ProcessingCompany, IndustrialProcess
     using Game.Prefabs;           // PrefabSystem, PrefabBase, ComponentBase, PrefabID
     using Unity.Entities;         // Entity, EntityManager, ComponentType, World, IComponentData
     using Unity.Mathematics;      // math

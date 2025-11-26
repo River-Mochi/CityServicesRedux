@@ -41,90 +41,154 @@
 
 <!-- CITY SERVICES BUILDINGS -->
 <!-- Note on Workplace Complexity: only main building matters :( extensions just add new workers but their Complexity is ignored :( -->
-
 <!-- patch 1.1.10f1 - 2024-10-24 Workplace component has new "m_MinimumWorkersLimit" property. All of these start at minimum 15
-  - College01, ElementarySchool01, ElementarySchool02, ElementarySchool03, HighSchool01, HighSchool02, HighSchool03, MedicalUniversity01, TechnicalUniversity01, University01: 15.
+  - College01, ElementarySchool01, ElementarySchool02, ElementarySchool03, HighSchool01, HighSchool02, HighSchool03, MedicalUniversity01, TechnicalUniversity01, University01 -->
 
 <!-- Elementary School -->
 <Prefab type="BuildingPrefab" name="ElementarySchool01">
   <Component name="Workplace">
-	<Field name="m_Workplaces" valueInt="50" /> <!-- 50, 1000 places -->
+	<Field name="m_Workplaces" valueInt="65" /> <!-- 50, 1000 places -->
 	<Field name="m_Complexity" valueInt="1" /> <!-- Simple => ok -->
   </Component>
-
 </Prefab>
 <Prefab type="BuildingExtensionPrefab" name="ElementarySchool01 Extension Wing">
   <Component name="Workplace">
-	<Field name="m_Workplaces" valueInt="20" /> <!-- 15, 500 places -->
+	<Field name="m_Workplaces" valueInt="25" /> <!-- 15, 500 places -->
   </Component>
 </Prefab>
 <Prefab type="BuildingPrefab" name="ElementarySchool01 Childrens Clinic">
   <Component name="Workplace">
-	<Field name="m_Workplaces" valueInt="15" /> <!-- 15 -->
+	<Field name="m_Workplaces" valueInt="18" /> <!-- 15 -->
   </Component>
 </Prefab>
+<Prefab type="BuildingPrefab" name="ElementarySchool02">
+  <Component name="Workplace">
+	<Field name="m_Workplaces" valueInt="30" /> <!-- 20, 400 places -->
+	<Field name="m_Complexity" valueInt="1" /> <!-- Simple => ok -->
+  </Component>
+</Prefab>
+<Prefab type="BuildingPrefab" name="ElementarySchool02 Classroom Extension Building">
+  <Component name="Workplace">
+	<Field name="m_Workplaces" valueInt="15" /> <!-- 5, 100 places -->
+  </Component>
+</Prefab>
+<Prefab type="BuildingPrefab" name="ElementarySchool02 Gymnasium">
+  <Component name="Workplace">
+	<Field name="m_Workplaces" valueInt="15" /> <!-- 5 -->
+  </Component>
+</Prefab>
+
+<Prefab type="BuildingPrefab" name="ElementarySchool03">
+  <Component name="Workplace">
+	<Field name="m_Workplaces" valueInt="75" /> <!-- 50, 1500 places -->
+	<Field name="m_Complexity" valueInt="1" /> <!-- Simple => ok -->
+  </Component>
+</Prefab>
+<Prefab type="BuildingExtensionPrefab" name="ElementarySchool03 Playground">
+  <Component name="Workplace">
+	<Field name="m_Workplaces" valueInt="12" /> <!-- 4 -->
+  </Component>
+</Prefab>
+
 
 <!-- High School -->
 <Prefab type="BuildingPrefab" name="HighSchool01">
   <Component name="Workplace">
-	<Field name="m_Workplaces" valueInt="80" /> <!-- 80, 800 places -->
+	<Field name="m_Workplaces" valueInt="100" /> <!-- 80, 800 places -->
 	<Field name="m_Complexity" valueInt="2" /> <!-- Simple => Complex -->
   </Component>
 </Prefab>
 <Prefab type="BuildingExtensionPrefab" name="HighSchool01 Extension Wing">
   <Component name="Workplace">
-	<Field name="m_Workplaces" valueInt="20" /> <!-- 15, 400 places -->
-  </Component>
-</Prefab>
-<Prefab type="BuildingExtensionPrefab" name="HighSchool01 Library">
-  <Component name="Workplace">
-	<Field name="m_Workplaces" valueInt="15" /> <!-- 15 -->
-  </Component>
-</Prefab>
-<Prefab type="BuildingPrefab" name="HighSchool01 Sports Field">
-  <Component name="Workplace">
-	<Field name="m_Workplaces" valueInt="15" /> <!-- 15 -->
+	<Field name="m_Workplaces" valueInt="30" /> <!-- 15, 400 places -->
   </Component>
 </Prefab>
 
+<Prefab type="BuildingExtensionPrefab" name="HighSchool01 Library">
+  <Component name="Workplace">
+	<Field name="m_Workplaces" valueInt="20" /> <!-- 15 -->
+  </Component>
+</Prefab>
+
+<Prefab type="BuildingPrefab" name="HighSchool01 Sports Field">
+  <Component name="Workplace">
+	<Field name="m_Workplaces" valueInt="20" /> <!-- 16 -->
+  </Component>
+</Prefab>
+
+<Prefab type="BuildingPrefab" name="HighSchool02">
+  <Component name="Workplace">
+	<Field name="m_Workplaces" valueInt="40" /> <!-- 20, 400 places -->
+	<Field name="m_Complexity" valueInt="1" />  <!-- Simple => ok -->
+  </Component>
+</Prefab>
+
+<Prefab type="BuildingPrefab" name="HighSchool02 Classroom Extension Building">
+  <Component name="Workplace">
+	<Field name="m_Workplaces" valueInt="20" /> <!-- 5, 100 places -->
+  </Component>
+</Prefab>
+
+<Prefab type="BuildingPrefab" name="HighSchool02 Sport Park">
+  <Component name="Workplace">
+	<Field name="m_Workplaces" valueInt="15" /> <!-- 5 -->
+  </Component>
+</Prefab>
+
+<Prefab type="BuildingPrefab" name="HighSchool03">
+  <Component name="Workplace">
+	<Field name="m_Workplaces" valueInt="60" /> <!-- 40, 800 places -->
+	<Field name="m_Complexity" valueInt="1" /> <!-- Simple => ok -->
+  </Component>
+</Prefab>
+
+<Prefab type="BuildingExtensionPrefab" name="HighSchool03 Extension Floors">
+  <Component name="Workplace">
+	<Field name="m_Workplaces" valueInt="40" /> <!-- 20, 400 places -->
+  </Component>
+</Prefab>
+<Prefab type="BuildingExtensionPrefab" name="HighSchool03 Rooftop Garden">
+  <Component name="Workplace">
+	<Field name="m_Workplaces" valueInt="16" /> <!-- 8 -->
+  </Component>
+</Prefab>
 <!-- College -->
 <Prefab type="BuildingPrefab" name="College01">
   <Component name="Workplace">
-	<Field name="m_Workplaces" valueInt="100" /> <!-- 100, 10000 places -->
-	<Field name="m_Complexity" valueInt="3" /> <!-- Complex => Hitech -->
+	<Field name="m_Workplaces" valueInt="300" /> <!-- 100, 10000 places -->
+	<Field name="m_Complexity" valueInt="3" /> <!-- 2 Complex => 3 Hitech -->
   </Component>
 </Prefab>
 <Prefab type="BuildingExtensionPrefab" name="College01 Extension Wing">
   <Component name="Workplace">
-	<Field name="m_Workplaces" valueInt="30" /> <!-- 15, 2500 places -->
+	<Field name="m_Workplaces" valueInt="75" /> <!-- 15, 2500 places -->
   </Component>
 </Prefab>
 <Prefab type="BuildingPrefab" name="College01 Library">
   <Component name="Workplace">
-	<Field name="m_Workplaces" valueInt="15" /> <!-- 15 -->
+	<Field name="m_Workplaces" valueInt="30" /> <!-- 24 -->
   </Component>
 </Prefab>
-
 <!-- University -->
 <Prefab type="BuildingPrefab" name="University01">
   <Component name="Workplace">
-	<Field name="m_Workplaces" valueInt="200" /> <!-- 170, 15000 places -->
+	<Field name="m_Workplaces" valueInt="400" /> <!-- 170, 15000 places -->
 	<Field name="m_Complexity" valueInt="3" /> <!-- Hitech => ok -->
   </Component>
 </Prefab>
 <Prefab type="BuildingExtensionPrefab" name="University01 Extension Wing">
   <Component name="Workplace">
-	<Field name="m_Workplaces" valueInt="50" /> <!-- 50, 2500 places -->
+	<Field name="m_Workplaces" valueInt="75" /> <!-- 50, 2500 places -->
   </Component>
 </Prefab>
 <Prefab type="BuildingPrefab" name="University01 Library">
   <Component name="Workplace">
-	<Field name="m_Workplaces" valueInt="50" /> <!-- 50 -->
+	<Field name="m_Workplaces" valueInt="75" /> <!-- 50 -->
   </Component>
 </Prefab>
 <Prefab type="BuildingPrefab" name="University01 Park">
   <Component name="Workplace">
-	<Field name="m_Workplaces" valueInt="20" /> <!-- 15 -->
+	<Field name="m_Workplaces" valueInt="30" /> <!-- 20 -->
   </Component>
 </Prefab>
 
@@ -132,7 +196,7 @@
   <Prefab type="BuildingPrefab" name="Airport01">
     <Component name="Workplace">
       <Field name="m_Workplaces" valueInt="140" valueFloat="0" /> <!-- 80 -->
-      <Field name="m_Complexity" valueInt="2" valueFloat="0" /> <!-- Hitech => Complex -->
+      <Field name="m_Complexity" valueInt="2" valueFloat="0" /> <!-- 3 Hitech => 2 Complex -->
     </Component>
   </Prefab>
   <Prefab type="BuildingExtensionPrefab" name="Airport01 Business Terminal">
@@ -160,16 +224,16 @@
   <!-- BronzeStatue -->
   <Prefab type="BuildingPrefab" name="BronzeStatue01">
     <Component name="Workplace">
-      <Field name="m_Workplaces" valueInt="20" valueFloat="0" /> <!-- 20 -->
+      <Field name="m_Workplaces" valueInt="21" valueFloat="0" /> <!-- 20 -->
       <Field name="m_Complexity" valueInt="1" valueFloat="0" /> <!-- Simple => ok -->
     </Component>
   </Prefab>
   <!-- Bus Depot -->
-  <!-- It's best to use "Adjust Transit Capacity" mod to change how much each Bus can carry or maximum vehicles the buildings can handle.
-This mod is best for changing the number of workers or education level of workers at the building. -->
+  <!-- Suggested: use "Adjust Transit Capacity" mod to change how much each Bus can carry or maximum vehicles the buildings can handle.
+This mod is best for changing number of workers or education level of workers at the building. -->
   <Prefab type="BuildingPrefab" name="BusDepot01">
     <Component name="Workplace">
-      <Field name="m_Workplaces" valueInt="50" valueFloat="0" /> <!-- 40, there are 25 buses... -->
+      <Field name="m_Workplaces" valueInt="50" valueFloat="0" /> <!-- 40, 25 buses -->
       <Field name="m_Complexity" valueInt="1" valueFloat="0" /> <!-- Simple => ok -->
     </Component>
   </Prefab>
@@ -205,33 +269,48 @@ This mod is best for changing the number of workers or education level of worker
       <Field name="m_Workplaces" valueInt="2" valueFloat="0" />  <!-- ? -->
     </Component>
   </Prefab>
+
+  <Prefab type="BuildingPrefab" name="BusStation02">
+    <Component name="Workplace">
+      <Field name="m_Workplaces" valueInt="14" valueFloat="0" /> <!-- 7 -->
+      <Field name="m_Complexity" valueInt="1" valueFloat="0" /> <!-- Simple => ok -->
+    </Component>
+  </Prefab>
+  <Prefab type="BuildingPrefab" name="BusStation02 Services">
+    <Component name="Workplace">
+      <Field name="m_Workplaces" valueInt="6" valueFloat="0" /> <!-- 2 -->
+      <Field name="m_Complexity" valueInt="1" valueFloat="0" /> <!-- Simple => ok -->
+    </Component>
+  </Prefab>
+
+
   <!-- Cargo Harbor -->
   <Prefab type="BuildingPrefab" name="CargoHarbor01">
     <Component name="Workplace">
       <Field name="m_Workplaces" valueInt="150" valueFloat="0" /> <!-- 75 -->
-      <Field name="m_Complexity" valueInt="1" valueFloat="0" /> <!-- Complex => Simple -->
+      <Field name="m_Complexity" valueInt="1" valueFloat="0" /> <!-- 2 Complex => 1 Simple -->
     </Component>
   </Prefab>
   <Prefab type="BuildingExtensionPrefab" name="CargoHarbor01 Cargo Cranes">
     <Component name="Workplace">
-      <Field name="m_Workplaces" valueInt="12" valueFloat="0" /> <!-- 10 -->
+      <Field name="m_Workplaces" valueInt="25" valueFloat="0" /> <!-- 20 -->
     </Component>
   </Prefab>
   <Prefab type="BuildingExtensionPrefab" name="CargoHarbor01 Railway Connection">
     <Component name="Workplace">
-      <Field name="m_Workplaces" valueInt="12" valueFloat="0" /> <!-- 10 -->
+      <Field name="m_Workplaces" valueInt="25" valueFloat="0" /> <!-- 20 -->
     </Component>
   </Prefab>
   <Prefab type="BuildingPrefab" name="CargoHarbor01 Warehouses">
     <Component name="Workplace">
-      <Field name="m_Workplaces" valueInt="8" valueFloat="0" /> <!-- 6 -->
+      <Field name="m_Workplaces" valueInt="16" valueFloat="0" /> <!-- 12 -->
     </Component>
   </Prefab>
   <!-- Cargo Train Terminal -->
   <Prefab type="BuildingPrefab" name="CargoTrainTerminal01">
     <Component name="Workplace">
-      <Field name="m_Workplaces" valueInt="50" valueFloat="0" /> <!-- 40 -->
-      <Field name="m_Complexity" valueInt="1" valueFloat="0" /> <!-- Complex => Simple -->
+      <Field name="m_Workplaces" valueInt="45" valueFloat="0" /> <!-- 32 -->
+      <Field name="m_Complexity" valueInt="1" valueFloat="0" /> <!-- 2 Complex => 1 Simple -->
     </Component>
   </Prefab>
   <Prefab type="BuildingExtensionPrefab" name="CargoTrainTerminal01 Extra Tracks">
@@ -241,36 +320,36 @@ This mod is best for changing the number of workers or education level of worker
   </Prefab>
   <Prefab type="BuildingPrefab" name="CargoTrainTerminal01 Storage Warehouse">
     <Component name="Workplace">
-      <Field name="m_Workplaces" valueInt="8" /> <!-- 4 -->
+      <Field name="m_Workplaces" valueInt="16" /> <!-- 12 -->
     </Component>
   </Prefab>
   <!-- Cemetery -->
   <Prefab type="BuildingPrefab" name="Cemetery01">
     <Component name="Workplace">
       <Field name="m_Workplaces" valueInt="30" valueFloat="0" /> <!-- 18, 15 Hearses -->
-      <Field name="m_Complexity" valueInt="0" valueFloat="0" /> <!-- Simple => Manual -->
+      <Field name="m_Complexity" valueInt="0" valueFloat="0" /> <!-- 1 Simple => 0 Manual -->
     </Component>
   </Prefab>
   <Prefab type="BuildingPrefab" name="Cemetery01 Chapel">
     <Component name="Workplace">
-      <Field name="m_Workplaces" valueInt="4" valueFloat="0" />
+      <Field name="m_Workplaces" valueInt="8" valueFloat="0" /> <!-- 6-->
     </Component>
   </Prefab>
   <Prefab type="BuildingPrefab" name="Cemetery01 Columbarium">
     <Component name="Workplace">
-      <Field name="m_Workplaces" valueInt="6" valueFloat="0" />
+      <Field name="m_Workplaces" valueInt="10" valueFloat="0" /> <!-- 8 -->
     </Component>
   </Prefab>
   <Prefab type="BuildingPrefab" name="Cemetery01 Mausoleum">
     <Component name="Workplace">
-      <Field name="m_Workplaces" valueInt="2" valueFloat="0" />
+      <Field name="m_Workplaces" valueInt="4" valueFloat="0" /> <!-- 3 -->
     </Component>
   </Prefab>
   <!-- Central Bank -->
   <Prefab type="BuildingPrefab" name="CentralBank01">
     <Component name="Workplace">
-      <Field name="m_Workplaces" valueInt="300" valueFloat="0" /> <!-- 250 -->
-      <Field name="m_Complexity" valueInt="3" valueFloat="0" /> <!-- Complex => Hitech -->
+      <Field name="m_Workplaces" valueInt="200" valueFloat="0" /> <!-- 80 -->
+      <Field name="m_Complexity" valueInt="3" valueFloat="0" /> <!-- 2 Complex => 3 Hitech -->
     </Component>
   </Prefab>
   <!-- Central Investigation Bureau -->
@@ -316,20 +395,20 @@ This mod is best for changing the number of workers or education level of worker
   </Prefab>
   <Prefab type="BuildingPrefab" name="CoalPowerPlant01 Coal Storage Yard">
     <Component name="Workplace">
-      <Field name="m_Workplaces" valueInt="8" valueFloat="0" /> <!-- 4 -->
+      <Field name="m_Workplaces" valueInt="12" valueFloat="0" /> <!-- 10 -->
     </Component>
   </Prefab>
   <!-- Community Pool -->
   <Prefab type="BuildingPrefab" name="CommunityPool01">
     <Component name="Workplace">
-      <Field name="m_Workplaces" valueInt="15" valueFloat="0" /> <!-- 15 -->
-      <Field name="m_Complexity" valueInt="0" valueFloat="0" /> <!-- Simple => Manual -->
+      <Field name="m_Workplaces" valueInt="15" valueFloat="0" /> <!-- 10 -->
+      <Field name="m_Complexity" valueInt="0" valueFloat="0" /> <!-- 1 Simple => 0 Manual -->
     </Component>
   </Prefab>
   <!-- Crematorium -->
   <Prefab type="BuildingPrefab" name="Crematorium01">
     <Component name="Workplace">
-      <Field name="m_Workplaces" valueInt="22" valueFloat="0" /> <!-- 20 -->
+      <Field name="m_Workplaces" valueInt="24" valueFloat="0" /> <!-- 20, 10 hearses -->
       <Field name="m_Complexity" valueInt="1" valueFloat="0" /> <!-- Simple => ok -->
     </Component>
     <Component name="DeathcareFacility">
@@ -346,7 +425,7 @@ This mod is best for changing the number of workers or education level of worker
   </Prefab>
   <Prefab type="BuildingPrefab" name="Crematorium01 Hearse Garage">
     <Component name="Workplace">
-      <Field name="m_Workplaces" valueInt="8" valueFloat="0" /> <!-- 3, 5 hearses -->
+      <Field name="m_Workplaces" valueInt="12" valueFloat="0" /> <!-- 10, 5 hearses -->
     </Component>
   </Prefab>
   <Prefab type="BuildingExtensionPrefab" name="Crematorium01 Refrigerator Expansion">
@@ -379,7 +458,7 @@ This mod is best for changing the number of workers or education level of worker
   <Prefab type="BuildingPrefab" name="EmergencyBatteryStation01">
     <Component name="Workplace">
       <Field name="m_Workplaces" valueInt="40" valueFloat="0" /> <!-- 32 -->
-      <Field name="m_Complexity" valueInt="1" valueFloat="0" /> <!-- Complex => Simple -->
+      <Field name="m_Complexity" valueInt="1" valueFloat="0" /> <!-- 2 Complex => 1 Simple -->
     </Component>
   </Prefab>
   <Prefab type="BuildingExtensionPrefab" name="EmergencyBatteryStation01 Additional Battery Bank">
@@ -392,11 +471,19 @@ This mod is best for changing the number of workers or education level of worker
       <Field name="m_Workplaces" valueInt="1" valueFloat="0" /> <!-- 0 original-->
     </Component>
   </Prefab>
+
+  <!-- Firefighting Helicopters Depot -->
+  <Prefab type="BuildingPrefab" name="FirefightingHelicoptersDepot01">
+    <Component name="Workplace">
+      <Field name="m_Workplaces" valueInt="60" /> <!-- 48, 5 helicopter -->
+      <Field name="m_Complexity" valueInt="1" /> <!-- 0 Manual => 1 Simple -->
+    </Component>
+  </Prefab>
   <!-- Fire House -->
   <Prefab type="BuildingPrefab" name="FireHouse01">
     <Component name="Workplace">
-      <Field name="m_Workplaces" valueInt="20" valueFloat="0" /> <!-- 8 -->
-      <Field name="m_Complexity" valueInt="1" valueFloat="0" /> <!-- Manual => Simple -->
+      <Field name="m_Workplaces" valueInt="20" valueFloat="0" /> <!-- 12, 4 engines -->
+      <Field name="m_Complexity" valueInt="1" valueFloat="0" /> <!-- 0 Manual => 1 Simple -->
     </Component>
   </Prefab>
   <Prefab type="BuildingExtensionPrefab" name="FireHouse01 Garage Extension">
@@ -404,16 +491,24 @@ This mod is best for changing the number of workers or education level of worker
       <Field name="m_Workplaces" valueInt="10" valueFloat="0" /> <!-- 4 -->
     </Component>
   </Prefab>
+
+  <Prefab type="BuildingPrefab" name="FireHouse02">
+    <Component name="Workplace">
+      <Field name="m_Workplaces" valueInt="18" valueFloat="0" /> <!-- 10, 6 engines -->
+      <Field name="m_Complexity" valueInt="1" valueFloat="0" /> <!-- 0 Manual => 1 Simple -->
+    </Component>
+  </Prefab>
+
   <!-- Fire Station -->
   <Prefab type="BuildingPrefab" name="FireStation01">
     <Component name="Workplace">
-      <Field name="m_Workplaces" valueInt="130" valueFloat="0" /> <!-- 120 -->
+      <Field name="m_Workplaces" valueInt="130" valueFloat="0" /> <!-- 120, 10 engines -->
       <Field name="m_Complexity" valueInt="2" valueFloat="0" /> <!-- Simple => Complex -->
     </Component>
   </Prefab>
   <Prefab type="BuildingPrefab" name="FireStation01 Disaster Response Unit">
     <Component name="Workplace">
-      <Field name="m_Workplaces" valueInt="20" valueFloat="0" /> <!-- ? -->
+      <Field name="m_Workplaces" valueInt="50" valueFloat="0" /> <!-- 40 -->
     </Component>
   </Prefab>
   <Prefab type="BuildingExtensionPrefab" name="FireStation01 Garage Extension">
@@ -423,7 +518,7 @@ This mod is best for changing the number of workers or education level of worker
   </Prefab>
   <Prefab type="BuildingExtensionPrefab" name="FireStation01 Helipad">
     <Component name="Workplace">
-      <Field name="m_Workplaces" valueInt="8" valueFloat="0" /> <!-- ? -->
+      <Field name="m_Workplaces" valueInt="10" valueFloat="0" /> <!-- ? -->
     </Component>
   </Prefab>
   <Prefab type="BuildingExtensionPrefab" name="FireStation01 Training Facilities">
@@ -431,17 +526,18 @@ This mod is best for changing the number of workers or education level of worker
       <Field name="m_Workplaces" valueInt="20" valueFloat="0" /> <!-- ? -->
     </Component>
   </Prefab>
+
   <!-- Football Field -->
   <Prefab type="BuildingPrefab" name="FootballField01">
     <Component name="Workplace">
-      <Field name="m_Workplaces" valueInt="15" valueFloat="0" /> <!-- 10 -->
+      <Field name="m_Workplaces" valueInt="25" valueFloat="0" /> <!-- 20 -->
       <Field name="m_Complexity" valueInt="0" valueFloat="0" /> <!-- Manual => ok -->
     </Component>
   </Prefab>
   <!-- Gas Power Plant -->
   <Prefab type="BuildingPrefab" name="GasPowerPlant01">
     <Component name="Workplace">
-      <Field name="m_Workplaces" valueInt="80" valueFloat="0" /> <!-- 70 -->
+      <Field name="m_Workplaces" valueInt="120" valueFloat="0" /> <!-- 100 -->
       <Field name="m_Complexity" valueInt="2" valueFloat="0" /> <!-- Complex => ok -->
     </Component>
   </Prefab>
@@ -457,20 +553,20 @@ This mod is best for changing the number of workers or education level of worker
   </Prefab>
   <Prefab type="BuildingPrefab" name="GasPowerPlant01 Fuel Storage Extension">
     <Component name="Workplace">
-      <Field name="m_Workplaces" valueInt="6" valueFloat="0" /> <!-- ? -->
+      <Field name="m_Workplaces" valueInt="12" valueFloat="0" /> <!-- 10 -->
     </Component>
   </Prefab>
   <!-- Geological Research Center -->
   <Prefab type="BuildingPrefab" name="GeologicalResearchCenter01">
     <Component name="Workplace">
-      <Field name="m_Workplaces" valueInt="50" valueFloat="0" /> <!-- 32 -->
+      <Field name="m_Workplaces" valueInt="74" valueFloat="0" /> <!-- 64 -->
       <Field name="m_Complexity" valueInt="3" valueFloat="0" /> <!-- Hitech => ok -->
     </Component>
   </Prefab>
   <!-- Geothermal Power Plant -->
   <Prefab type="BuildingPrefab" name="GeothermalPowerPlant01">
     <Component name="Workplace">
-      <Field name="m_Workplaces" valueInt="75" valueFloat="0" /> <!-- 70 -->
+      <Field name="m_Workplaces" valueInt="80" valueFloat="0" /> <!-- 70 -->
       <Field name="m_Complexity" valueInt="2" valueFloat="0" /> <!-- Complex => ok -->
     </Component>
   </Prefab>
@@ -481,19 +577,19 @@ This mod is best for changing the number of workers or education level of worker
   </Prefab>
   <Prefab type="BuildingExtensionPrefab" name="GeothermalPowerPlant01 Additional Turbine">
     <Component name="Workplace">
-      <Field name="m_Workplaces" valueInt="16" valueFloat="0" /> <!-- 14 -->
+      <Field name="m_Workplaces" valueInt="20" valueFloat="0" /> <!-- 14 -->
     </Component>
   </Prefab>
   <Prefab type="BuildingExtensionPrefab" name="GeothermalPowerPlant01 Binary Cycle Power Station">
     <Component name="Workplace">
-      <Field name="m_Workplaces" valueInt="8" valueFloat="0" /> <!-- 4 -->
+      <Field name="m_Workplaces" valueInt="10" valueFloat="0" /> <!-- 4 -->
     </Component>
   </Prefab>
   <!-- Groundwater Pumping Station -->
   <Prefab type="BuildingPrefab" name="GroundwaterPumpingStation01">
     <Component name="Workplace">
       <Field name="m_Workplaces" valueInt="20" valueFloat="0" /> <!-- 16 -->
-      <Field name="m_Complexity" valueInt="1" valueFloat="0" /> <!-- Manual => Simple -->
+      <Field name="m_Complexity" valueInt="1" valueFloat="0" /> <!-- 0 Manual => 1 Simple -->
     </Component>
   </Prefab>
   <Prefab type="BuildingExtensionPrefab" name="GroundwaterPumpingStation01 Extra Pump">
@@ -510,45 +606,39 @@ This mod is best for changing the number of workers or education level of worker
   </Prefab>
   <Prefab type="BuildingExtensionPrefab" name="Harbor01 Extra Pier">
     <Component name="Workplace">
-      <Field name="m_Workplaces" valueInt="16" valueFloat="0" /> <!-- ? -->
+      <Field name="m_Workplaces" valueInt="20" valueFloat="0" /> <!-- ? -->
     </Component>
   </Prefab>
   <Prefab type="BuildingExtensionPrefab" name="Harbor01 Transit Terminal">
     <Component name="Workplace">
-      <Field name="m_Workplaces" valueInt="10" valueFloat="0" /> <!-- ? -->
+      <Field name="m_Workplaces" valueInt="12" valueFloat="0" /> <!-- ? -->
     </Component>
   </Prefab>
   <!-- Hazardous Waste Processing Site -->
   <Prefab type="BuildingPrefab" name="HazardousWasteProcessingSite01">
     <Component name="Workplace">
-      <Field name="m_Workplaces" valueInt="255" valueFloat="0" /> <!-- 250 -->
-      <Field name="m_Complexity" valueInt="2" valueFloat="0" /> <!-- Hitech => Complex -->
+      <Field name="m_Workplaces" valueInt="275" valueFloat="0" /> <!-- 250, 250 vehicles -->
+      <Field name="m_Complexity" valueInt="2" valueFloat="0" /> <!-- 3 Hitech => 2 Complex -->
     </Component>
   </Prefab>
   <!-- Health Research Institute -->
   <Prefab type="BuildingPrefab" name="HealthResearchInstitute01">
     <Component name="Workplace">
-      <Field name="m_Workplaces" valueInt="170" valueFloat="0" /> <!-- 150 -->
+      <Field name="m_Workplaces" valueInt="160" valueFloat="0" /> <!-- 100 -->
       <Field name="m_Complexity" valueInt="3" valueFloat="0" /> <!-- Hitech => ok -->
     </Component>
   </Prefab>
-  <!-- Firefighting Helicopters Depot -->
-  <Prefab type="BuildingPrefab" name="FirefightingHelicoptersDepot01">
-    <Component name="Workplace">
-      <Field name="m_Workplaces" valueInt="70" /> <!-- 60 -->
-      <Field name="m_Complexity" valueInt="1" /> <!-- Manual => Simple -->
-    </Component>
-  </Prefab>
+
   <!-- Hospital -->
   <Prefab type="BuildingPrefab" name="Hospital01">
     <Component name="Workplace">
-      <Field name="m_Workplaces" valueInt="150" valueFloat="0" /> <!-- 120 -->
+      <Field name="m_Workplaces" valueInt="160" valueFloat="0" /> <!-- 120, 30 ambulance, 500 places -->
       <Field name="m_Complexity" valueInt="3" valueFloat="0" /> <!-- Hitech => ok -->
     </Component>
   </Prefab>
   <Prefab type="BuildingExtensionPrefab" name="Hospital01 Helipad">
     <Component name="Workplace">
-      <Field name="m_Workplaces" valueInt="10" valueFloat="0" /> <!-- ? -->
+      <Field name="m_Workplaces" valueInt="12" valueFloat="0" /> <!-- ? -->
     </Component>
   </Prefab>
   <Prefab type="BuildingExtensionPrefab" name="Hospital01 Special Ward">
@@ -564,15 +654,15 @@ This mod is best for changing the number of workers or education level of worker
   <!-- Hydroelectric Power Plant -->
   <Prefab type="BuildingPrefab" name="HydroelectricPowerPlant01">
     <Component name="Workplace">
-      <Field name="m_Workplaces" valueInt="160" valueFloat="0" /> <!-- 150 -->
+      <Field name="m_Workplaces" valueInt="45" valueFloat="0" /> <!-- 18 -->
       <Field name="m_Complexity" valueInt="2" valueFloat="0" /> <!-- Complex => ok -->
     </Component>
   </Prefab>
   <!-- Incineration Plant -->
   <Prefab type="BuildingPrefab" name="IncinerationPlant01">
     <Component name="Workplace">
-      <Field name="m_Workplaces" valueInt="65" valueFloat="0" /> <!-- 60 -->
-      <Field name="m_Complexity" valueInt="1" valueFloat="0" /> <!-- Complex => Simple -->
+      <Field name="m_Workplaces" valueInt="75" valueFloat="0" /> <!-- 60, 50 vehicles -->
+      <Field name="m_Complexity" valueInt="1" valueFloat="0" /> <!-- 2 Complex => 1 Simple -->
     </Component>
   </Prefab>
   <Prefab type="BuildingExtensionPrefab" name="IncinerationPlant01 Extra Incinerator Furnace">
@@ -587,7 +677,7 @@ This mod is best for changing the number of workers or education level of worker
   </Prefab>
   <Prefab type="BuildingPrefab" name="IncinerationPlant01 Storage Extension">
     <Component name="Workplace">
-      <Field name="m_Workplaces" valueInt="10" valueFloat="0" /> <!-- ? -->
+      <Field name="m_Workplaces" valueInt="15" valueFloat="0" /> <!-- 10 -->
     </Component>
   </Prefab>
   <!-- InternationalAirport -->
@@ -602,7 +692,7 @@ This mod is best for changing the number of workers or education level of worker
 This mod is best for changing the number of workers or education level of workers below. -->
   <Prefab type="BuildingPrefab" name="Landfill01">
     <Component name="Workplace">
-      <Field name="m_Workplaces" valueInt="130" valueFloat="0" /> <!--- 100, 20 trucks -->
+      <Field name="m_Workplaces" valueInt="100" valueFloat="0" /> <!--- 30, 20 trucks -->
       <Field name="m_Complexity" valueInt="0" valueFloat="0" /> <!-- Manual => ok -->
     </Component>
   </Prefab>
@@ -613,81 +703,90 @@ This mod is best for changing the number of workers or education level of worker
   </Prefab>
   <Prefab type="BuildingPrefab" name="Landfill01 Hazardous Waste Collection Point">
     <Component name="Workplace">
-      <Field name="m_Workplaces" valueInt="15" valueFloat="0" /> <!-- ? -->
+      <Field name="m_Workplaces" valueInt="16" valueFloat="0" /> <!-- 12 -->
     </Component>
   </Prefab>
   <Prefab type="BuildingExtensionPrefab" name="Landfill01 Waste Recycling Unit">
     <Component name="Workplace">
-      <Field name="m_Workplaces" valueInt="10" valueFloat="0" /> <!-- ? -->
+      <Field name="m_Workplaces" valueInt="20" valueFloat="0" /> <!-- 16 -->
     </Component>
   </Prefab>
   <!-- Large Emergency Shelter -->
   <Prefab type="BuildingPrefab" name="LargeEmergencyShelter01">
     <Component name="Workplace">
-      <Field name="m_Workplaces" valueInt="60" valueFloat="0" /> <!-- 14 -->
+      <Field name="m_Workplaces" valueInt="50" valueFloat="0" /> <!-- 28, 20 vehicles -->
       <Field name="m_Complexity" valueInt="1" valueFloat="0" /> <!-- Simple => ok -->
     </Component>
   </Prefab>
   <!-- Large Hadron Collider -->
   <Prefab type="BuildingPrefab" name="LargeHadronCollider01">
     <Component name="Workplace">
-      <Field name="m_Workplaces" valueInt="200" valueFloat="0" /> <!-- 52 -->
+      <Field name="m_Workplaces" valueInt="200" valueFloat="0" /> <!-- 100 -->
       <Field name="m_Complexity" valueInt="3" valueFloat="0" /> <!-- Hitech => ok -->
     </Component>
   </Prefab>
   <!-- Medical Clinic -->
   <Prefab type="BuildingPrefab" name="MedicalClinic01">
     <Component name="Workplace">
-      <Field name="m_Workplaces" valueInt="30" valueFloat="0" /> <!-- 18 -->
+      <Field name="m_Workplaces" valueInt="30" valueFloat="0" /> <!-- 18, 5 ambulance -->
       <Field name="m_Complexity" valueInt="2" valueFloat="0" /> <!-- Complex => ok -->
     </Component>
   </Prefab>
   <Prefab type="BuildingExtensionPrefab" name="MedicalClinic01 Ambulance Depot">
     <Component name="Workplace">
-      <Field name="m_Workplaces" valueInt="16" valueFloat="0" /> <!-- 8 -->
+      <Field name="m_Workplaces" valueInt="20" valueFloat="0" /> <!-- 8 -->
     </Component>
   </Prefab>
   <Prefab type="BuildingPrefab" name="MedicalClinic01 Extension Wing">
     <Component name="Workplace">
-      <Field name="m_Workplaces" valueInt="16" valueFloat="0" /> <!-- 8 -->
+      <Field name="m_Workplaces" valueInt="20" valueFloat="0" /> <!-- 8 -->
     </Component>
   </Prefab>
+
+  <Prefab type="BuildingPrefab" name="MedicalClinic02">
+    <Component name="Workplace">
+      <Field name="m_Workplaces" valueInt="18" valueFloat="0" /> <!-- 6, 3 ambulance -->
+      <Field name="m_Complexity" valueInt="2" valueFloat="0" /> <!-- Complex => ok -->
+    </Component>
+  </Prefab>
+
   <!-- MedicalUniversity -->
   <Prefab type="BuildingPrefab" name="MedicalUniversity01">
     <Component name="Workplace">
-      <Field name="m_Workplaces" valueInt="75" valueFloat="0" /> <!-- 48 -->
+      <Field name="m_Workplaces" valueInt="160" valueFloat="0" /> <!-- 150, 15000 places -->
       <Field name="m_Complexity" valueInt="3" valueFloat="0" /> <!-- Hitech => ok -->
     </Component>
   </Prefab>
   <Prefab type="BuildingExtensionPrefab" name="MedicalUniversity01 Extension Wing">
     <Component name="Workplace">
-      <Field name="m_Workplaces" valueInt="25" valueFloat="0" /> <!-- 16 -->
+      <Field name="m_Workplaces" valueInt="30" valueFloat="0" /> <!-- 15 -->
     </Component>
   </Prefab>
   <Prefab type="BuildingPrefab" name="MedicalUniversity01 Practice Clinic">
     <Component name="Workplace">
-      <Field name="m_Workplaces" valueInt="14" valueFloat="0" />
+      <Field name="m_Workplaces" valueInt="60" valueFloat="0" /> <!-- 40 -->
     </Component>
   </Prefab>
   <Prefab type="BuildingPrefab" name="MedicalUniversity01 Research Facilities">
     <Component name="Workplace">
-      <Field name="m_Workplaces" valueInt="20" valueFloat="0" />
+      <Field name="m_Workplaces" valueInt="100" valueFloat="0" /> <!-- 70 -->
     </Component>
   </Prefab>
   <!-- Nuclear Power Plant -->
   <Prefab type="BuildingPrefab" name="NuclearPowerPlant01">
     <Component name="Workplace">
-      <Field name="m_Workplaces" valueInt="200" valueFloat="0" /> <!-- 134 -->
+      <Field name="m_Workplaces" valueInt="350" valueFloat="0" /> <!-- 300 -->
       <Field name="m_Complexity" valueInt="3" valueFloat="0" /> <!-- Hitech => ok -->
     </Component>
   </Prefab>
   <!-- Observation Tower -->
   <Prefab type="BuildingPrefab" name="ObservationTower01">
     <Component name="Workplace">
-      <Field name="m_Workplaces" valueInt="32" valueFloat="0" /> <!-- 12 -->
+      <Field name="m_Workplaces" valueInt="45" valueFloat="0" /> <!-- 40 -->
       <Field name="m_Complexity" valueInt="1" valueFloat="0" /> <!-- Simple => ok -->
     </Component>
   </Prefab>
+
   <!-- Parkings -->
   <Prefab type="BuildingPrefab" name="ParkingHall01"> <!-- Overground Parking Building, 160 places -->
     <Component name="Workplace">
@@ -697,28 +796,39 @@ This mod is best for changing the number of workers or education level of worker
   </Prefab>
   <Prefab type="BuildingExtensionPrefab" name="ParkingHall01 Car Wash">
     <Component name="Workplace">
-      <Field name="m_Workplaces" valueInt="4" valueFloat="0" />
+      <Field name="m_Workplaces" valueInt="16" valueFloat="0" /> <!-- 8 -->
       <Field name="m_Complexity" valueInt="0" valueFloat="0" /> <!-- Manual => ok -->
     </Component>
   </Prefab>
   <Prefab type="BuildingPrefab" name="ParkingHall02"> <!-- Underground Parking Building, 200 places -->
     <Component name="Workplace">
-      <Field name="m_Workplaces" valueInt="12" valueFloat="0" /> <!-- 12 -->
+      <Field name="m_Workplaces" valueInt="30" valueFloat="0" /> <!-- 24 -->
       <Field name="m_Complexity" valueInt="0" valueFloat="0" /> <!-- Manual => ok -->
     </Component>
   </Prefab>
+
+  <Prefab type="BuildingPrefab" name="ParkingHall03"> <!-- Multi-level Parking Building, ? places -->
+    <Component name="Workplace">
+      <Field name="m_Workplaces" valueInt="30" valueFloat="0" /> <!-- 20 -->
+      <Field name="m_Complexity" valueInt="0" valueFloat="0" /> <!-- Manual => ok -->
+    </Component>
+  </Prefab>
+
+  <Prefab type="BuildingPrefab" name="ParkingHall04"> <!-- 2-level Parking Building, ? places -->
+    <Component name="Workplace">
+      <Field name="m_Workplaces" valueInt="12" valueFloat="0" /> <!-- 10 -->
+      <Field name="m_Complexity" valueInt="0" valueFloat="0" /> <!-- Manual => ok -->
+    </Component>
+  </Prefab>
+
+
   <Prefab type="BuildingPrefab" name="ParkingLot01"> <!-- Small 41 -->
     <Component name="Workplace">
-      <Field name="m_Workplaces" valueInt="2" valueFloat="0" /> <!-- 0 -->
+      <Field name="m_Workplaces" valueInt="2" valueFloat="0" /> <!-- 2 -->
       <Field name="m_Complexity" valueInt="0" valueFloat="0" /> <!-- Manual => ok -->
     </Component>
   </Prefab>
-  <Prefab type="BuildingPrefab" name="ParkingLot02"> <!-- Medium, 60 -->
-    <Component name="Workplace">
-      <Field name="m_Workplaces" valueInt="3" valueFloat="0" /> <!-- 0 -->
-      <Field name="m_Complexity" valueInt="0" valueFloat="0" /> <!-- Manual => ok -->
-    </Component>
-  </Prefab>
+
   <Prefab type="BuildingPrefab" name="ParkingLot03"> <!-- Large, 135 places -->
     <Component name="Workplace">
       <Field name="m_Workplaces" valueInt="6" valueFloat="0" /> <!-- 2 -->
@@ -733,20 +843,21 @@ This mod is best for changing the number of workers or education level of worker
   </Prefab>
   <Prefab type="BuildingPrefab" name="AutomatedParkingBuilding01"> <!-- 416 places -->
     <Component name="Workplace">
-      <Field name="m_Workplaces" valueInt="12" valueFloat="0" /> <!-- 12 -->
+      <Field name="m_Workplaces" valueInt="16" valueFloat="0" /> <!-- 12 -->
       <Field name="m_Complexity" valueInt="1" valueFloat="0" /> <!-- Simple => ok -->
     </Component>
   </Prefab>
+
   <!-- Park Maintenance Depot -->
   <Prefab type="BuildingPrefab" name="ParkMaintenanceDepot01">
     <Component name="Workplace">
-      <Field name="m_Workplaces" valueInt="40" valueFloat="0" /> <!-- 30, 8 vehicles -->
+      <Field name="m_Workplaces" valueInt="40" valueFloat="0" /> <!-- 30, 10 vehicles -->
       <Field name="m_Complexity" valueInt="1" valueFloat="0" /> <!-- Simple => ok -->
     </Component>
   </Prefab>
   <Prefab type="BuildingPrefab" name="ParkMaintenanceDepot01 Extra Garage">
     <Component name="Workplace">
-      <Field name="m_Workplaces" valueInt="20" valueFloat="0" /> <!-- 10, 5 vehicles -->
+      <Field name="m_Workplaces" valueInt="18" valueFloat="0" /> <!-- 10, 5 vehicles -->
     </Component>
   </Prefab>
   <Prefab type="BuildingExtensionPrefab" name="ParkMaintenanceDepot01 Supply Storage">
@@ -754,10 +865,22 @@ This mod is best for changing the number of workers or education level of worker
       <Field name="m_Workplaces" valueInt="12" valueFloat="0" /> <!-- 8 -->
     </Component>
   </Prefab>
+
+  <!-- Parks -->
+
+ <!-- BasketballCourt04 -->
+  <Prefab type="BuildingPrefab" name="BasketballCourt04">
+    <Component name="Workplace">
+      <Field name="m_Workplaces" valueInt="12" valueFloat="0" /> <!-- 10 -->
+      <Field name="m_Complexity" valueInt="1" valueFloat="0" /> <!-- Simple => ok -->
+    </Component>
+  </Prefab>
+
+
   <!-- Police Headquarters -->
   <Prefab type="BuildingPrefab" name="PoliceHeadquarters01">
     <Component name="Workplace">
-      <Field name="m_Workplaces" valueInt="100" valueFloat="0" /> <!-- 60 -->
+      <Field name="m_Workplaces" valueInt="130" valueFloat="0" /> <!-- 120, 20 cars -->
       <Field name="m_Complexity" valueInt="2" valueFloat="0" /> <!-- Complex => ok -->
     </Component>
   </Prefab>
@@ -768,19 +891,19 @@ This mod is best for changing the number of workers or education level of worker
   </Prefab>
   <Prefab type="BuildingExtensionPrefab" name="PoliceHeadquarters01 Garage Extension">
     <Component name="Workplace">
-      <Field name="m_Workplaces" valueInt="10" valueFloat="0" /> <!-- 10 -->
+      <Field name="m_Workplaces" valueInt="12" valueFloat="0" /> <!-- 10 -->
     </Component>
   </Prefab>
   <Prefab type="BuildingExtensionPrefab" name="PoliceHeadquarters01 Helipad">
     <Component name="Workplace">
-      <Field name="m_Workplaces" valueInt="10" valueFloat="0" /> <!-- 6 -->
+      <Field name="m_Workplaces" valueInt="12" valueFloat="0" /> <!-- 6 -->
     </Component>
   </Prefab>
   <!-- Police Station -->
   <Prefab type="BuildingPrefab" name="PoliceStation01">
     <Component name="Workplace">
-      <Field name="m_Workplaces" valueInt="25" valueFloat="0" /> <!-- 12 -->
-      <Field name="m_Complexity" valueInt="1" valueFloat="0" /> <!-- Manual => Simple -->
+      <Field name="m_Workplaces" valueInt="26" valueFloat="0" /> <!-- 18, 6 cars -->
+      <Field name="m_Complexity" valueInt="1" valueFloat="0" /> <!-- 0 Manual => 1 Simple -->
     </Component>
   </Prefab>
   <Prefab type="BuildingExtensionPrefab" name="PoliceStation01 Garage Extension">
@@ -789,35 +912,62 @@ This mod is best for changing the number of workers or education level of worker
     </Component>
   </Prefab>
 
+  <Prefab type="BuildingPrefab" name="PoliceStation02">
+    <Component name="Workplace">
+      <Field name="m_Workplaces" valueInt="24" valueFloat="0" /> <!-- 8, 6 cars -->
+      <Field name="m_Complexity" valueInt="1" valueFloat="0" /> <!-- 0 Manual => 1 Simple -->
+    </Component>
+  </Prefab>
+
+  <Prefab type="BuildingPrefab" name="PoliceStation03">
+    <Component name="Workplace">
+      <Field name="m_Workplaces" valueInt="40" valueFloat="0" /> <!-- 20, 16 cars -->
+      <Field name="m_Complexity" valueInt="0" valueFloat="0" /> <!-- 0 Manual => ok -->
+    </Component>
+  </Prefab>
+
+
   <!-- Post Office (workplaces only)
-		Suggested: use Magic Mail mod for other features, it's better for tuning mail vans, capacities.
-        Use this mod to change worker numbers and education requirements for the workers. -->
+		Suggested: use Magic Mail mod for other features, better for tuning mail vans, capacities.
+        Use this mod to change worker numbers and education requirements for workers. -->
   <Prefab type="BuildingPrefab" name="PostOffice01">
     <Component name="Workplace">
-      <Field name="m_Workplaces" valueInt="25" valueFloat="0" /> <!-- 12 -->
+      <Field name="m_Workplaces" valueInt="50" valueFloat="0" /> <!-- 40, 20 vans -->
       <Field name="m_Complexity" valueInt="1" valueFloat="0" /> <!-- Simple => ok -->
     </Component>
   </Prefab>
 
   <Prefab type="BuildingPrefab" name="PostOffice01 Mail Storage Extension">
     <Component name="Workplace">
-      <Field name="m_Workplaces" valueInt="5" valueFloat="0" /> <!-- 2 -->
+      <Field name="m_Workplaces" valueInt="14" valueFloat="0" /> <!-- 10 -->
     </Component>
   </Prefab>
 
   <Prefab type="BuildingPrefab" name="PostOffice01 Post Van Garage">
     <Component name="Workplace">
-      <Field name="m_Workplaces" valueInt="10" valueFloat="0" /> <!-- 2 -->
+      <Field name="m_Workplaces" valueInt="26" valueFloat="0" /> <!-- 20, 10 vans -->
     </Component>
   </Prefab>
 
-<!-- Postal buildings: worker counts only; mail mechanics are better tuned by Magic Mail mod. -->
-  <!-- Post Sorting Facility (workplaces only)
+ <Prefab type="BuildingPrefab" name="PostOffice02">
+    <Component name="Workplace">
+      <Field name="m_Workplaces" valueInt="10" valueFloat="0" /> <!-- 6, 4 vans -->
+      <Field name="m_Complexity" valueInt="1" valueFloat="0" /> <!-- Simple => ok -->
+    </Component>
+  </Prefab>
+
+  <Prefab type="BuildingExtensionPrefab" name="PostOffice02 Loading Dock">
+    <Component name="Workplace">
+      <Field name="m_Workplaces" valueInt="6" valueFloat="0" /> <!-- 2 -->
+    </Component>
+  </Prefab>
+
+  <!-- Post Sorting Facility (workplaces only here)
        Suggested: use Magic Mail mod which handles mail processing / vans more safely. -->
 
   <Prefab type="BuildingPrefab" name="PostSortingFacility01">
     <Component name="Workplace">
-      <Field name="m_Workplaces" valueInt="60" /> <!-- 20 -->
+      <Field name="m_Workplaces" valueInt="100" /> <!-- 80, 5 trucks-->
       <Field name="m_Complexity" valueInt="1" /> <!-- Simple => ok -->
     </Component>
   </Prefab>
@@ -826,8 +976,8 @@ This mod is best for changing the number of workers or education level of worker
     <Component name="Workplace">
       <Field name="m_Workplaces" valueInt="12" /> <!-- 4 -->
     </Component>
-    <!-- NOTE: PostFacility SortingRate omitted on purpose. use Magic Mail mod -->
   </Prefab>
+   <!-- NOTE: PostFacility SortingRate - use Magic Mail mod -->
 
   <Prefab type="BuildingExtensionPrefab" name="PostSortingFacility01 Extra Loading Ramps">
     <Component name="Workplace">
@@ -837,28 +987,21 @@ This mod is best for changing the number of workers or education level of worker
 
   <Prefab type="BuildingPrefab" name="PostSortingFacility01 Mail Storage Extension">
     <Component name="Workplace">
-      <Field name="m_Workplaces" valueInt="4" /> <!-- 0 -->
+      <Field name="m_Workplaces" valueInt="30" />  <!-- 20 -->
     </Component>
   </Prefab>
-
-
-
-
-
-
-
 
 
   <!-- Prison -->
   <Prefab type="BuildingPrefab" name="Prison01">
     <Component name="Workplace">
-      <Field name="m_Workplaces" valueInt="50" valueFloat="0" />
-      <Field name="m_Complexity" valueInt="1" /> <!-- Complex => Simple -->
+      <Field name="m_Workplaces" valueInt="90" valueFloat="0" /> <!-- 80, 10 prisonVan, 500 places -->
+      <Field name="m_Complexity" valueInt="1" /> <!-- 2 Complex => 1 Simple -->
     </Component>
   </Prefab>
   <Prefab type="BuildingPrefab" name="Prison01 Extra Wing">
     <Component name="Workplace">
-      <Field name="m_Workplaces" valueInt="20" valueFloat="0" />
+      <Field name="m_Workplaces" valueInt="50" valueFloat="0" /> <!-- 30 -->
     </Component>
   </Prefab>
   <Prefab type="BuildingExtensionPrefab" name="Prison01 Prison Library">
@@ -869,98 +1012,98 @@ This mod is best for changing the number of workers or education level of worker
   <!-- Radio Mast -->
   <Prefab type="BuildingPrefab" name="RadioMast01">
     <Component name="Workplace">
-      <Field name="m_Workplaces" valueInt="2" valueFloat="0" /> <!-- 1 -->
-      <Field name="m_Complexity" valueInt="0" valueFloat="0" /> <!-- Manual => ok -->
+      <Field name="m_Workplaces" valueInt="15" valueFloat="0" /> <!-- 10 -->
+      <Field name="m_Complexity" valueInt="1" valueFloat="0" /> <!-- 2 Complex => 1 Simple -->
     </Component>
   </Prefab>
   <!-- Radio Telescope -->
   <Prefab type="BuildingPrefab" name="RadioTelescope01">
     <Component name="Workplace">
-      <Field name="m_Workplaces" valueInt="30" valueFloat="0" /> <!-- 24 -->
+      <Field name="m_Workplaces" valueInt="45" valueFloat="0" /> <!-- 30 -->
       <Field name="m_Complexity" valueInt="3" valueFloat="0" /> <!-- Hitech => ok -->
     </Component>
   </Prefab>
   <!-- Rail Yard -->
   <Prefab type="BuildingPrefab" name="RailYard01">
     <Component name="Workplace">
-      <Field name="m_Workplaces" valueInt="30" valueFloat="0" /> <!-- 8, 10 trains -->
+      <Field name="m_Workplaces" valueInt="45" valueFloat="0" /> <!-- 30, 10 trains -->
       <Field name="m_Complexity" valueInt="2" valueFloat="0" /> <!-- Complex => ok -->
     </Component>
   </Prefab>
   <Prefab type="BuildingExtensionPrefab" name="RailYard01 Extra Rails">
     <Component name="Workplace">
-      <Field name="m_Workplaces" valueInt="10" valueFloat="0" /> <!-- 4, 5 trains -->
+      <Field name="m_Workplaces" valueInt="16" valueFloat="0" /> <!-- 4, 5 trains -->
     </Component>
   </Prefab>
   <Prefab type="BuildingExtensionPrefab" name="RailYard01 Maintenance Hall">
     <Component name="Workplace">
-      <Field name="m_Workplaces" valueInt="15" valueFloat="0" /> <!-- 6 -->
+      <Field name="m_Workplaces" valueInt="16" valueFloat="0" /> <!-- 6 -->
     </Component>
   </Prefab>
   <!-- Recycling Center -->
   <Prefab type="BuildingPrefab" name="RecyclingCenter01">
     <Component name="Workplace">
-      <Field name="m_Workplaces" valueInt="48" valueFloat="0" /> <!-- 32 -->
+      <Field name="m_Workplaces" valueInt="75" valueFloat="0" /> <!-- 60, 15 trucks -->
       <Field name="m_Complexity" valueInt="2" valueFloat="0" /> <!-- Complex => ok -->
     </Component>
   </Prefab>
   <Prefab type="BuildingExtensionPrefab" name="RecyclingCenter01 Garbage Truck Depot">
     <Component name="Workplace">
-      <Field name="m_Workplaces" valueInt="10" valueFloat="0" />
+      <Field name="m_Workplaces" valueInt="30" valueFloat="0" /> <!-- 20, 10 trucks -->
     </Component>
   </Prefab>
   <Prefab type="BuildingPrefab" name="RecyclingCenter01 Hazardous Waste Collection Point">
     <Component name="Workplace">
-      <Field name="m_Workplaces" valueInt="10" valueFloat="0" />
+      <Field name="m_Workplaces" valueInt="30" valueFloat="0" /> <!-- 20 -->
     </Component>
   </Prefab>
   <Prefab type="BuildingPrefab" name="RecyclingCenter01 Storage Extension">
     <Component name="Workplace">
-      <Field name="m_Workplaces" valueInt="10" valueFloat="0" />
+      <Field name="m_Workplaces" valueInt="18" valueFloat="0" /> <!-- 10 -->
     </Component>
   </Prefab>
   <!-- Road Maintenance Depot -->
   <Prefab type="BuildingPrefab" name="RoadMaintenanceDepot01">
     <Component name="Workplace">
-      <Field name="m_Workplaces" valueInt="20" valueFloat="0" /> <!-- 10, 10 Vehicles -->
+      <Field name="m_Workplaces" valueInt="40" valueFloat="0" /> <!-- 30, 10 Vehicles -->
       <Field name="m_Complexity" valueInt="0" valueFloat="0" /> <!-- Manual => ok -->
     </Component>
   </Prefab>
   <Prefab type="BuildingExtensionPrefab" name="RoadMaintenanceDepot01 Extra Garage">
     <Component name="Workplace">
-      <Field name="m_Workplaces" valueInt="10" valueFloat="0" /> <!-- 5, 5 vehicles -->
+      <Field name="m_Workplaces" valueInt="12" valueFloat="0" /> <!-- 5, 5 vehicles -->
     </Component>
   </Prefab>
   <!-- Satellite Uplink -->
   <Prefab type="BuildingPrefab" name="SatelliteUplink01">
     <Component name="Workplace">
-      <Field name="m_Workplaces" valueInt="20" valueFloat="0" /> <!-- 10 -->
+      <Field name="m_Workplaces" valueInt="45" valueFloat="0" /> <!-- 30 -->
       <Field name="m_Complexity" valueInt="3" valueFloat="0" /> <!-- Hitech => ok -->
     </Component>
   </Prefab>
   <!-- Server Farm -->
   <Prefab type="BuildingPrefab" name="ServerFarm01">
     <Component name="Workplace">
-      <Field name="m_Workplaces" valueInt="40" valueFloat="0" /> <!-- 10 -->
-      <Field name="m_Complexity" valueInt="3" valueFloat="0" /> <!-- Complex => Hitech -->
+      <Field name="m_Workplaces" valueInt="55" valueFloat="0" /> <!-- 40 -->
+      <Field name="m_Complexity" valueInt="3" valueFloat="0" /> <!-- Hitech => ok -->
     </Component>
   </Prefab>
   <Prefab type="BuildingExtensionPrefab" name="ServerFarm01 Server Upgrade">
     <Component name="Workplace">
-      <Field name="m_Workplaces" valueInt="20" valueFloat="0" /> <!-- 3 -->
+      <Field name="m_Workplaces" valueInt="20" valueFloat="0" /> <!-- 8 -->
     </Component>
   </Prefab>
   <!-- Small Coal Power Plant -->
   <Prefab type="BuildingPrefab" name="SmallCoalPowerPlant01">
     <Component name="Workplace">
-      <Field name="m_Workplaces" valueInt="40" valueFloat="0" /> <!-- 10 -->
+      <Field name="m_Workplaces" valueInt="45" valueFloat="0" /> <!-- 37 -->
       <Field name="m_Complexity" valueInt="1" valueFloat="0" /> <!-- Simple => ok -->
     </Component>
   </Prefab>
   <!-- Solar Power Station -->
   <Prefab type="BuildingPrefab" name="SolarPowerStation01">
     <Component name="Workplace">
-      <Field name="m_Workplaces" valueInt="40" valueFloat="0" /> <!-- 32 -->
+      <Field name="m_Workplaces" valueInt="50" valueFloat="0" /> <!-- 32 -->
       <Field name="m_Complexity" valueInt="3" valueFloat="0" /> <!-- Complex => Hitech -->
     </Component>
   </Prefab>
@@ -971,43 +1114,41 @@ This mod is best for changing the number of workers or education level of worker
   </Prefab>
   <Prefab type="BuildingPrefab" name="SolarPowerStation01 Backup Battery">
     <Component name="Workplace">
-      <Field name="m_Workplaces" valueInt="12" valueFloat="0" />  <!-- 8 -->
+      <Field name="m_Workplaces" valueInt="16" valueFloat="0" />  <!-- 8 -->
     </Component>
   </Prefab>
   <!-- Space Center -->
   <Prefab type="BuildingPrefab" name="SpaceCenter01">
     <Component name="Workplace">
-      <Field name="m_Workplaces" valueInt="120" valueFloat="0" /> <!-- 50 -->
+      <Field name="m_Workplaces" valueInt="150" valueFloat="0" /> <!-- 100 -->
       <Field name="m_Complexity" valueInt="3" valueFloat="0" /> <!-- Hitech => ok -->
     </Component>
   </Prefab>
+
   <!-- Subway Stations -->
-  <Prefab type="BuildingPrefab" name="SubwayStation01"> <!-- Underground -->
+ <Prefab type="BuildingPrefab" name="SubwayStationElevated02"> <!-- elevated -->
     <Component name="Workplace">
-      <Field name="m_Workplaces" valueInt="8" valueFloat="0" /> <!-- 4 -->
+      <Field name="m_Workplaces" valueInt="16" valueFloat="0" /> <!-- 10 -->
       <Field name="m_Complexity" valueInt="1" valueFloat="0" /> <!-- Simple => ok -->
     </Component>
   </Prefab>
+
   <Prefab type="BuildingExtensionPrefab" name="SubwayStation01 Station Services">
     <Component name="Workplace">
       <Field name="m_Workplaces" valueInt="8" valueFloat="0" /> <!-- 4 -->
     </Component>
   </Prefab>
-  <Prefab type="BuildingPrefab" name="SubwayStation02"> <!-- Overground -->
-    <Component name="Workplace">
-      <Field name="m_Workplaces" valueInt="8" valueFloat="0" /> <!-- 4 -->
-      <Field name="m_Complexity" valueInt="1" valueFloat="0" /> <!-- Simple => ok -->
-    </Component>
-  </Prefab>
+
   <Prefab type="BuildingExtensionPrefab" name="SubwayStation02 Station Services">
     <Component name="Workplace">
       <Field name="m_Workplaces" valueInt="8" valueFloat="0" /> <!-- 4 -->
     </Component>
   </Prefab>
+
   <!-- Subway Yard -->
   <Prefab type="BuildingPrefab" name="SubwayYard01">
     <Component name="Workplace">
-      <Field name="m_Workplaces" valueInt="40" valueFloat="0" /> <!-- 13, 10 trains -->
+      <Field name="m_Workplaces" valueInt="40" valueFloat="0" /> <!-- 30, 10 trains -->
       <Field name="m_Complexity" valueInt="2" valueFloat="0" /> <!-- Complex => ok -->
     </Component>
   </Prefab>
@@ -1018,130 +1159,146 @@ This mod is best for changing the number of workers or education level of worker
   </Prefab>
   <Prefab type="BuildingPrefab" name="SubwayYard01 Maintenance Hall">
     <Component name="Workplace">
-      <Field name="m_Workplaces" valueInt="8" valueFloat="0" /> <!-- 6 -->
+      <Field name="m_Workplaces" valueInt="24" valueFloat="0" /> <!-- 18 -->
     </Component>
   </Prefab>
+
   <!-- Taxi Depot -->
   <Prefab type="BuildingPrefab" name="TaxiDepot01">  <!-- large depot -->
     <Component name="Workplace">
-      <Field name="m_Workplaces" valueInt="36" valueFloat="0" /> <!-- 8, 25 taxis -->
+      <Field name="m_Workplaces" valueInt="35" valueFloat="0" /> <!-- 25, 25 taxis -->
       <Field name="m_Complexity" valueInt="1" valueFloat="0" /> <!-- Simple => ok -->
     </Component>
-
   </Prefab>
   <Prefab type="BuildingExtensionPrefab" name="TaxiDepot01 Dispatch Center">
     <Component name="Workplace">
-      <Field name="m_Workplaces" valueInt="12" valueFloat="0" /> <!-- 8 -->
+      <Field name="m_Workplaces" valueInt="16" valueFloat="0" /> <!-- 8 -->
     </Component>
   </Prefab>
   <Prefab type="BuildingExtensionPrefab" name="TaxiDepot01 Electric Taxis">
     <Component name="Workplace">
-      <Field name="m_Workplaces" valueInt="12" valueFloat="0" />  <!-- 8 -->
+      <Field name="m_Workplaces" valueInt="16" valueFloat="0" />  <!-- 8 -->
     </Component>
   </Prefab>
   <Prefab type="BuildingPrefab" name="TaxiDepot01 Taxi Garage"> <!-- small -->
     <Component name="Workplace">
-      <Field name="m_Workplaces" valueInt="12" valueFloat="0" /> <!-- 10, 10 taxis -->
+      <Field name="m_Workplaces" valueInt="18" valueFloat="0" /> <!-- 10, 10 taxis -->
     </Component>
   </Prefab>
+
+  <Prefab type="BuildingPrefab" name="TaxiDepot02">
+    <Component name="Workplace">
+      <Field name="m_Workplaces" valueInt="16" valueFloat="0" /> <!-- 8, 8 taxis -->
+      <Field name="m_Complexity" valueInt="1" valueFloat="0" /> <!-- Simple => ok -->
+    </Component>
+  </Prefab>
+
   <!-- Technical University -->
   <Prefab type="BuildingPrefab" name="TechnicalUniversity01">
     <Component name="Workplace">
-      <Field name="m_Workplaces" valueInt="75" valueFloat="0" /> <!-- 48 -->
+      <Field name="m_Workplaces" valueInt="160" valueFloat="0" /> <!-- 150-->
       <Field name="m_Complexity" valueInt="3" valueFloat="0" /> <!-- Hitech => ok -->
     </Component>
   </Prefab>
   <Prefab type="BuildingExtensionPrefab" name="TechnicalUniversity01 Extension Wing">
     <Component name="Workplace">
-      <Field name="m_Workplaces" valueInt="25" valueFloat="0" /> <!-- 16 -->
+      <Field name="m_Workplaces" valueInt="60" valueFloat="0" /> <!-- 50 -->
     </Component>
   </Prefab>
   <Prefab type="BuildingExtensionPrefab" name="TechnicalUniversity01 Workshop Upgrade">
     <Component name="Workplace">
-      <Field name="m_Workplaces" valueInt="15" valueFloat="0" /> <!-- 14 -->
+      <Field name="m_Workplaces" valueInt="50" valueFloat="0" /> <!-- 40 -->
     </Component>
   </Prefab>
   <!-- Telecom Tower -->
   <Prefab type="BuildingPrefab" name="TelecomTower01">
     <Component name="Workplace">
-      <Field name="m_Workplaces" valueInt="20" valueFloat="0" /> <!-- 10 -->
+      <Field name="m_Workplaces" valueInt="35" valueFloat="0" /> <!-- 30 -->
       <Field name="m_Complexity" valueInt="3" valueFloat="0" /> <!-- Hitech => ok -->
     </Component>
   </Prefab>
+
   <!-- Train Station -->
   <Prefab type="BuildingPrefab" name="TrainStation01">
     <Component name="Workplace">
-      <Field name="m_Workplaces" valueInt="30" valueFloat="0" /> <!-- 6 -->
+      <Field name="m_Workplaces" valueInt="30" valueFloat="0" /> <!-- 20 -->
       <Field name="m_Complexity" valueInt="1" valueFloat="0" /> <!-- Simple => ok -->
     </Component>
   </Prefab>
   <Prefab type="BuildingExtensionPrefab" name="TrainStation01 Extra Platforms">
     <Component name="Workplace">
-      <Field name="m_Workplaces" valueInt="2" valueFloat="0" />
+      <Field name="m_Workplaces" valueInt="4" valueFloat="0" /> <!-- 2 -->
     </Component>
   </Prefab>
   <Prefab type="BuildingExtensionPrefab" name="TrainStation01 Services">
     <Component name="Workplace">
-      <Field name="m_Workplaces" valueInt="20" valueFloat="0" /> <!-- 4 -->
+      <Field name="m_Workplaces" valueInt="20" valueFloat="0" /> <!-- 8 -->
     </Component>
   </Prefab>
   <Prefab type="BuildingExtensionPrefab" name="TrainStation01 Subway Interface">
     <Component name="Workplace">
-      <Field name="m_Workplaces" valueInt="2" valueFloat="0" />
+      <Field name="m_Workplaces" valueInt="12" valueFloat="0" /> <!-- 8 -->
     </Component>
   </Prefab>
   <Prefab type="BuildingExtensionPrefab" name="TrainStation01 Taxi Stop">
     <Component name="Workplace">
-      <Field name="m_Workplaces" valueInt="2" valueFloat="0" />
+      <Field name="m_Workplaces" valueInt="5" valueFloat="0" /> <!-- 4 -->
     </Component>
   </Prefab>
+  <Prefab type="BuildingPrefab" name="TrainStation03">
+    <Component name="Workplace">
+      <Field name="m_Workplaces" valueInt="6" valueFloat="0" /> <!-- 2 -->
+      <Field name="m_Complexity" valueInt="1" valueFloat="0" /> <!-- Simple => ok -->
+    </Component>
+  </Prefab>
+
   <!-- Tram Depot -->
   <Prefab type="BuildingPrefab" name="TramDepot01">
     <Component name="Workplace">
-      <Field name="m_Workplaces" valueInt="30" valueFloat="0" /> <!-- 6, 10 vehicles -->
+      <Field name="m_Workplaces" valueInt="30" valueFloat="0" /> <!-- 20, 10 vehicles -->
       <Field name="m_Complexity" valueInt="1" valueFloat="0" /> <!-- Complex => Simple -->
     </Component>
   </Prefab>
   <Prefab type="BuildingExtensionPrefab" name="TramDepot01 Garage Extension">
     <Component name="Workplace">
-      <Field name="m_Workplaces" valueInt="10" valueFloat="0" /> <!-- 6, 5 vehicles -->
+      <Field name="m_Workplaces" valueInt="16" valueFloat="0" /> <!-- 12, 5 vehicles -->
     </Component>
   </Prefab>
   <!-- Wastewater Treatment Plant -->
   <Prefab type="BuildingPrefab" name="WastewaterTreatmentPlant01">
     <Component name="Workplace">
-      <Field name="m_Workplaces" valueInt="50" valueFloat="0" /> <!-- 50 -->
+      <Field name="m_Workplaces" valueInt="60" valueFloat="0" /> <!-- 50 -->
       <Field name="m_Complexity" valueInt="2" valueFloat="0" /> <!-- Complex => ok -->
     </Component>
   </Prefab>
   <Prefab type="BuildingPrefab" name="WastewaterTreatmentPlant01 Extra Processing Unit">
     <Component name="Workplace">
-      <Field name="m_Workplaces" valueInt="20" valueFloat="0" /> <!-- 20 -->
+      <Field name="m_Workplaces" valueInt="30" valueFloat="0" /> <!-- 20 -->
     </Component>
   </Prefab>
   <!-- Water Park -->
   <Prefab type="BuildingPrefab" name="WaterPark01">
     <Component name="Workplace">
-      <Field name="m_Workplaces" valueInt="20" valueFloat="0" /> <!-- 14 -->
+      <Field name="m_Workplaces" valueInt="34" valueFloat="0" /> <!-- 28 -->
       <Field name="m_Complexity" valueInt="0" valueFloat="0" /> <!-- Manual => ok -->
     </Component>
   </Prefab>
   <!-- Water Pumping Station -->
   <Prefab type="BuildingPrefab" name="WaterPumpingStation01">
     <Component name="Workplace">
-      <Field name="m_Workplaces" valueInt="12" valueFloat="0" /> <!-- 4 -->
+      <Field name="m_Workplaces" valueInt="16" valueFloat="0" /> <!-- 8 -->
       <Field name="m_Complexity" valueInt="1" valueFloat="0" /> <!-- Simple => ok -->
     </Component>
   </Prefab>
   <Prefab type="BuildingExtensionPrefab" name="WaterPumpingStation01 Extra Pump">
     <Component name="Workplace">
-      <Field name="m_Workplaces" valueInt="4" valueFloat="0" /> <!-- 2 -->
+      <Field name="m_Workplaces" valueInt="6" valueFloat="0" /> <!-- 2 -->
     </Component>
   </Prefab>
   <!-- Welfare Office-->
   <Prefab type="BuildingPrefab" name="WelfareOffice01">
     <Component name="Workplace">
-      <Field name="m_Workplaces" valueInt="80" valueFloat="0" /> <!-- 12 -->
+      <Field name="m_Workplaces" valueInt="80" valueFloat="0" /> <!-- 50 -->
       <Field name="m_Complexity" valueInt="1" valueFloat="0" /> <!-- Simple => ok -->
     </Component>
   </Prefab>
@@ -1190,7 +1347,7 @@ This mod is best for changing the number of workers or education level of worker
   </Prefab>
   <Prefab type="BuildingPrefab" name="OldCastle01">
     <Component name="Workplace">
-      <Field name="m_Workplaces" valueInt="50" valueFloat="0" /> <!-- 8 -->
+      <Field name="m_Workplaces" valueInt="50" valueFloat="0" /> <!-- 30 -->
       <Field name="m_Complexity" valueInt="1" valueFloat="0" /> <!-- Simple => ok -->
     </Component>
   </Prefab>

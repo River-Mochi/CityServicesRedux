@@ -29,8 +29,8 @@ namespace RealCity
     public class Setting : ModSetting
     {
         // Tabs (sections)
-        public const string kSection = "Actions";    
-        public const string kDebugSection = "Debug"; 
+        public const string kSection = "Actions";
+        public const string kDebugSection = "Debug";
 
         // Groups
         public const string kToggleGroup = "Options";

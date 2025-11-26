@@ -58,7 +58,7 @@ namespace RealCity
                     m_Setting.GetOptionDescLocaleID(nameof(Setting.UseModPresets)),
                     "**Quick Start** - apply all recommended presets\n" +
                     "EASY Mode:  1-Click and DONE!\n\n" +
-            
+
                     "Recommended for most players - already has curated tweaks e.g. worker numbers/wages and more that differ from game defaults."
                 },
 

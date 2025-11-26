@@ -17,7 +17,7 @@ Tweak and modify City Service buildings to your liking. By default, you could ju
 - Increased workers automatically increases the wages (scaled by the game itself).
 - New settings are only applied to **new** buildings.
 
-Number of **preset** buildings and extensions: **186**.
+Number of **preset** buildings and extensions: **219**.
 
 ### 7 Languages
 * English, Français French, Deutsch German, Español Spanish
@@ -26,7 +26,7 @@ Number of **preset** buildings and extensions: **186**.
 ### Curated Presets
 * All buildings have more workplaces, some have required education levels adjusted, and other allowed tweaks.
 * Presets are designed with various considerations. Some have only slightly more workers (2), and some have many.
-* Examples: Central Intelligence vanilla is 200 workers, preset is 330 as this is a large building.
+* Examples: University is 170 workers, preset increases this to 400 as this large building campus.
 * Crematorium has 2x higher processing rate to handle increased deaths from Population Rebalance.
 * Existing buildings need to be destroyed and plopped again to see new changes.
 * If you want more than preset numbers, then see Power users.
@@ -38,15 +38,15 @@ Number of **preset** buildings and extensions: **186**.
 - Refer to info / examples in Config.xml for how to add / alter components (edit with Notepad++ or similar).
 - New changes can be "Applied" even during the game (use options menu).
 
-### Technical
+### Notes
 
 * DLC entries only work if you own the DLC and can plop the items.
 * Safety: mod does **not** modify save files or any game systems.
-* Can be removed at any time - already plopped buildings retain modded values and new buildings will have ofc vanilla values.
+* Can be removed at any time - already plopped buildings retain modded values and new buildings will have vanilla values.
 * Performance: this is a lightweight configuration mod. It only does a short pass when applying settings (on game load or when you click APPLY).
-It does not add any per-frame systems, so it has essentially no impact on performance.
-* Works well with mods: Adjust School, Adjust Transit, Magic Mail, Magic garbage, as this mod is focused on the number of workers.
-* No known issues
+It does not add any per-frame systems, so it essentially has no impact on performance.
+* Works with mods: Adjust School, Adjust Transit, Magic Mail, Magic Garbage Truck, as this mod is focused on the number of workers and those do not.
+* Magic Hearse and Achievement Fixer also works with this. Pretty much any mod that doesn't adjust worker numbers should be good.
 
 
 ### CREDITS
@@ -71,7 +71,7 @@ It does not add any per-frame systems, so it has essentially no impact on perfor
 	<!--Link to the forum post where the mod can be discussed-->
 	<ForumLink Value="https://forum.paradoxplaza.com/forum/threads/city-services-rebalance-redux.1878625/" />
 	<!--Version of the mod-->
-	<ModVersion Value="0.5.6" />
+	<ModVersion Value="0.5.7" />
 	<!--Recommended version of the base game to use the mod-->
 	<GameVersion Value="1.4.*" />
 	<!--Dependency for the mod, can be set multiple times-->
@@ -79,7 +79,7 @@ It does not add any per-frame systems, so it has essentially no impact on perfor
 	<!--Change log for new version. Single line or multi line. Supports minimal markdown subset-->
 	<!--ChangeLog Value="" /-->
 	<ChangeLog>
-- update prefab data for Config minimums
+- added prefabs, Config increased to 219 presets now.
 </ChangeLog>
 	<!--External link. supported types are discord, github, youtube, twitch, x, paypal, patreon-->
 	<ExternalLink Type="discord" Url="https://discord.gg/HTav7ARPs2" />
