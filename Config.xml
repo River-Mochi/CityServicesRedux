@@ -376,6 +376,15 @@ This mod is best for changing number of workers or education level of workers at
       <Field name="m_Workplaces" valueInt="50" valueFloat="0" /> <!-- 30 -->
     </Component>
   </Prefab>
+
+  <Prefab type="BuildingPrefab" name="EE_Cityhall">
+    <Component name="Workplace">
+      <Field name="m_Workplaces" valueInt="200" valueFloat="0" /> <!-- 50 -->
+      <Field name="m_Complexity" valueInt="2" valueFloat="0" /> <!-- Complex => ok -->
+    </Component>
+  </Prefab>
+
+
   <!-- Coal Power Plant -->
   <Prefab type="BuildingPrefab" name="CoalPowerPlant01">
     <Component name="Workplace">
@@ -726,7 +735,7 @@ This mod is best for changing the number of workers or education level of worker
     </Component>
   </Prefab>
   <!-- Medical Clinic -->
-  <Prefab type="BuildingPrefab" name="MedicalClinic01">
+  <Prefab type="BuildingPrefab" name="MedicalClinic01">  <!-- 100 patients -->
     <Component name="Workplace">
       <Field name="m_Workplaces" valueInt="30" valueFloat="0" /> <!-- 18, 5 ambulance -->
       <Field name="m_Complexity" valueInt="2" valueFloat="0" /> <!-- Complex => ok -->
@@ -746,6 +755,19 @@ This mod is best for changing the number of workers or education level of worker
   <Prefab type="BuildingPrefab" name="MedicalClinic02">
     <Component name="Workplace">
       <Field name="m_Workplaces" valueInt="18" valueFloat="0" /> <!-- 6, 3 ambulance -->
+      <Field name="m_Complexity" valueInt="2" valueFloat="0" /> <!-- Complex => ok -->
+    </Component>
+  </Prefab>
+
+  <Prefab type="BuildingPrefab" name="EE_MedicalClinic">  <!-- 300 patients -->
+    <Component name="Workplace">
+      <Field name="m_Workplaces" valueInt="55" valueFloat="0" /> <!-- 18, 9 ambulance -->
+      <Field name="m_Complexity" valueInt="2" valueFloat="0" /> <!-- Complex => ok -->
+    </Component>
+  </Prefab>
+  <Prefab type="BuildingPrefab" name="FR_MedicalClinic">  <!-- 150 patients -->
+    <Component name="Workplace">
+      <Field name="m_Workplaces" valueInt="40" valueFloat="0" /> <!-- 15, 5 ambulance -->
       <Field name="m_Complexity" valueInt="2" valueFloat="0" /> <!-- Complex => ok -->
     </Component>
   </Prefab>
@@ -1302,6 +1324,15 @@ This mod is best for changing the number of workers or education level of worker
       <Field name="m_Complexity" valueInt="1" valueFloat="0" /> <!-- Simple => ok -->
     </Component>
   </Prefab>
+
+  <Prefab type="BuildingPrefab" name="EE_WelfareOffice">
+    <Component name="Workplace">
+      <Field name="m_Workplaces" valueInt="80" valueFloat="0" /> <!-- 50 -->
+      <Field name="m_Complexity" valueInt="1" valueFloat="0" /> <!-- Simple => ok -->
+    </Component>
+  </Prefab>
+
+
   <!-- Landmarks -->
   <Prefab type="BuildingPrefab" name="FerrisWheel01">
     <Component name="Workplace">
